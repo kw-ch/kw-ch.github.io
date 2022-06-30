@@ -15,6 +15,9 @@ minima:
   date_format: "%d %B %Y"
   skin: dark
 
+collections: 
+ - projects
+
   # generate social links in footer
   social_links:
     twitter: jekyllrb
@@ -52,8 +55,6 @@ minima:
 # this and add the path to the pages in order as they should show up
 header_pages:
  - archive.md
- 
- 
 
 # Build settings
 theme: minima
