@@ -18,6 +18,7 @@ minima:
 collections: 
   projects:
     output: true
+    permalink: /:collection/:title
 
   # generate social links in footer
   social_links:
