@@ -1,6 +1,7 @@
 ---
-title: Projects
 permalink: /projects
+layout: page
+title: Projects
 ---
 
 {% for project in site.projects %}
