@@ -16,7 +16,8 @@ minima:
   skin: dark
 
 collections: 
- - projects
+  projects:
+    output: true
 
   # generate social links in footer
   social_links:
