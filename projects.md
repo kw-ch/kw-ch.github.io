@@ -1,6 +1,6 @@
 ---
 title: Projects
-permalink: /projects/
+permalink: /projects
 ---
 
 {% for project in site.projects %}
