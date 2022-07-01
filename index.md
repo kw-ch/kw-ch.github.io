@@ -16,4 +16,4 @@ You can find the source code for Jekyll at GitHub:
 
 [jekyll-organization]: https://github.com/jekyll
 
-![github](/assets/github-brands.svg){:height="50px" width="50px"}
+![github](/assets/github-brands.svg){:height="25px" width="25px"}
