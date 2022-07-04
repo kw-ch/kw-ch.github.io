@@ -15,7 +15,6 @@ You can find the source code for Jekyll at GitHub:
 
 
 [jekyll-organization]: https://github.com/jekyll
-&NewLine;
-&NewLine;
 
-![github](/assets/github-icon-dark-transparent.png){:height="25px" width="25px"}&nbsp;test
+
+![github](/assets/github-icon-dark-transparent.png){:height="25px" width="25px"}&nbsp;[Github](https://github.com/msuicc)
