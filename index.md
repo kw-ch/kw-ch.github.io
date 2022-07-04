@@ -18,3 +18,4 @@ You can find the source code for Jekyll at GitHub:
 
 
 ![github](/assets/github-icon-dark-transparent.png){:height="25px" width="25px"}&nbsp;[Github](https://github.com/msuicc)
+![linkedin](/assets/linkedin-logo-dark.png){:height="25px" width ="25px"}&nbsp;[LinkedIn](https://www.linkedin.com)
