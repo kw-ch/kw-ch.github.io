@@ -5,6 +5,7 @@ title: About
 Hi, I'm msuicc. I build things and occasionally write about them. I'm an electrical engineering student with interests in electronics, embedded systems and signal processing. 
 
 You can find my project logs [here](https://msuicc.github.io/projects)
+
 Other non-project related posts are [here](https://msuicc.github.io/archive)
 
 
