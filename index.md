@@ -2,7 +2,13 @@
 layout: page
 title: About
 ---
+Hi, I'm msuicc. I build things and occasionally write about them. I'm an electrical engineering student with interests in electronics, embedded systems and signal processing. 
 
+You can find my project logs [here](https://msuicc.github.io/projects)
+Other non-project related posts are [here](https://msuicc.github.io/archive)
+
+
+<!---
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
 You can find the source code for Minima at GitHub:
@@ -16,7 +22,7 @@ You can find the source code for Jekyll at GitHub:
 
 [jekyll-organization]: https://github.com/jekyll
 
-<!---
+
 ![github](/assets/github-icon-dark-transparent.png){:height="25px" width="25px"}&nbsp;[Github](https://github.com/msuicc)\\
 ![linkedin](/assets/linkedin-logo-dark.png){:height="20px" width ="20px"}&nbsp;&nbsp;[LinkedIn](https://www.linkedin.com)
 -->
