@@ -16,6 +16,7 @@ You can find the source code for Jekyll at GitHub:
 
 [jekyll-organization]: https://github.com/jekyll
 
-
+<!---
 ![github](/assets/github-icon-dark-transparent.png){:height="25px" width="25px"}&nbsp;[Github](https://github.com/msuicc)\\
 ![linkedin](/assets/linkedin-logo-dark.png){:height="20px" width ="20px"}&nbsp;&nbsp;[LinkedIn](https://www.linkedin.com)
+-->
