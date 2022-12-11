@@ -4,9 +4,9 @@ title: About
 ---
 Hi, I'm msuicc. An electrical engineering student with interests in analogue electronics, embedded systems and signal processing. I build things and occasionally write about them here. 
 
-You can find my project logs [<u>here</u>](https://msuicc.github.io/projects)
+You can find my project logs [<u>here</u>](https://msuicc.github.io/projects).
 
-Other non-project related posts are [<u>here</u>](https://msuicc.github.io/archive)
+Non-project posts are [<u>here</u>](https://msuicc.github.io/archive).
 
 
 <!---
