@@ -1,0 +1,119 @@
+{
+  "main": {
+    "id": "835b48386cf1acd3",
+    "type": "split",
+    "children": [
+      {
+        "id": "f44d18b6ad198e2c",
+        "type": "leaf",
+        "state": {
+          "type": "kanban",
+          "state": {
+            "file": "EE/Self-Learning.md"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "585c97e62a4faaa1",
+    "type": "split",
+    "children": [
+      {
+        "id": "4f4afc93a4c8c075",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cfab40e4286de1c8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "9e9a5575fe12fabb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 168.5
+  },
+  "right": {
+    "id": "4bcf1868b22fc245",
+    "type": "split",
+    "children": [
+      {
+        "id": "caf0ec7374a79f86",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d16808a189a4eb15",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "fbfd4f66712017fa",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "EE/Self-Learning.md"
+              }
+            }
+          },
+          {
+            "id": "01ec013f88e7e882",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "EE/Self-Learning.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 296
+  },
+  "active": "f44d18b6ad198e2c",
+  "lastOpenFiles": [
+    "Misc.md",
+    "Code/C.md",
+    "EE/Self-Learning.md",
+    "EE/Other.md",
+    "EE/Embedded.md",
+    "EE/Electronics.md",
+    "Quick Notes.md",
+    "MHR/Dango.md",
+    "MHR/MH Math.md",
+    "MHR/MUs.md"
+  ]
+}

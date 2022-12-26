@@ -1,0 +1,15 @@
+{
+  "promptDelete": false,
+  "foldHeading": true,
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "showLineNumber": false,
+  "livePreview": true,
+  "spellcheckLanguages": [
+    "en-GB"
+  ]
+}

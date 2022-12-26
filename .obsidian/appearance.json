@@ -1,0 +1,11 @@
+{
+  "cssTheme": "Obsidian Nord",
+  "translucency": false,
+  "baseFontSize": 13,
+  "enabledCssSnippets": [
+    "Font"
+  ],
+  "interfaceFontFamily": "Noto Sans",
+  "accentColor": "",
+  "textFontFamily": "Noto Sans"
+}

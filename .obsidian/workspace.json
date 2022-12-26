@@ -1,0 +1,131 @@
+{
+  "main": {
+    "id": "835b48386cf1acd3",
+    "type": "split",
+    "children": [
+      {
+        "id": "278e4295b026903c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "094516a550fa900c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "585c97e62a4faaa1",
+    "type": "split",
+    "children": [
+      {
+        "id": "4f4afc93a4c8c075",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cfab40e4286de1c8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9e9a5575fe12fabb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 250.5
+  },
+  "right": {
+    "id": "4bcf1868b22fc245",
+    "type": "split",
+    "children": [
+      {
+        "id": "caf0ec7374a79f86",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d16808a189a4eb15",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "fbfd4f66712017fa",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "01ec013f88e7e882",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 296,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false
+    }
+  },
+  "active": "094516a550fa900c",
+  "lastOpenFiles": [
+    "Notes/Circuits.md",
+    "Hobby/Projects.md",
+    "Hobby/Embedded.md",
+    "Notes/Maths.md",
+    "Hobby/EMG Project Log.md",
+    "Kanban.md",
+    "Misc/Dump.md",
+    "Hobby/Code.md",
+    "Misc/Career Advice.md",
+    "Misc/Latex Copy Paste Chart.md"
+  ]
+}
