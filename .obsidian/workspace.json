@@ -8,11 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "094516a550fa900c",
+            "id": "c15996f210070b01",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2022-12-28-stm32-development.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -80,7 +84,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "_posts/2022-12-28-stm32-development.md"
+              }
             }
           },
           {
@@ -89,6 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "_posts/2022-12-28-stm32-development.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,17 +122,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "094516a550fa900c",
+  "active": "c15996f210070b01",
   "lastOpenFiles": [
+    "_posts/2022-12-26-emg-cookbook.md",
+    "_posts/2022-12-28-stm32-development.md",
+    "_posts/2022-12-24-stm32-development-on-windows.md",
+    "Untitled.md",
     "Notes/Circuits.md",
     "Hobby/Projects.md",
     "Hobby/Embedded.md",
     "Notes/Maths.md",
     "Hobby/EMG Project Log.md",
-    "Kanban.md",
-    "Misc/Dump.md",
-    "Hobby/Code.md",
-    "Misc/Career Advice.md",
-    "Misc/Latex Copy Paste Chart.md"
+    "Kanban.md"
   ]
 }
