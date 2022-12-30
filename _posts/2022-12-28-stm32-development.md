@@ -68,7 +68,7 @@ With the coding done, we now need to build the project and then flash it to the 
 
 Once that is done, you will find that a new folder is created inside your project folder called 'build'. Enter this folder and then run `st-flash --reset write <project-name.bin> 0x8000000` to flash the program to the STM32. `--reset` is optional but helps ensure the MCU is in reset mode while flashing. If successful, you should see something like:
 
-![](/assets/"Screenshot 2022-12-30 204838.png")
+![ss](https://raw.githubusercontent.com/msuicc/msuicc.github.io/main/assets/Screenshot%202022-12-30%20204838.png?token=GHSAT0AAAAAAB3L7RSO3EXMTMMTKESG7JWCY5PETJQ)
 
 Don't worry about the warning message 'NRST is not connected'. This happens if you're using a Blue/Black Pill board since they don't have an NRST pin on the board for the ST-LINK probe (it has only 4 pins, 3.3V, GND, SWCLK, SWDIO).   
 
