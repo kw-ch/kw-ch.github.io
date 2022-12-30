@@ -39,7 +39,7 @@ To program/debug the STM32 using the ST-LINK, you'll need to connect the ST-LINK
 
 To test whether your ST-LINK is detecting the STM32 correctly, type `st-info --probe` in your MSYS2 shell. You should see something like: 
 
-![](/assets/"Screenshot 2022-12-30 204711.png")
+![ss](https://raw.githubusercontent.com/msuicc/msuicc.github.io/main/assets/Screenshot%202022-12-30%20204711.png?token=GHSAT0AAAAAAB3L7RSO7LCM4BK6XPBXHJ66Y5PET7A)
 
 # Getting Blinky
 With everything in place, we can now get started with coding. We'll be doing the ubiquitous blinky program to demonstrate the build process. 
