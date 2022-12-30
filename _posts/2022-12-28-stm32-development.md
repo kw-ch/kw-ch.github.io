@@ -4,7 +4,7 @@ title: "STM32 Development on Windows using STM32CubeMX, VS Code and MSYS2"
 categories: misc
 ---
 
-This is a quick guide that walks through the process of setting up VS Code for STM32 development. I wrote this because I wanted to make VS Code sort of my 'everything' editor to do all my coding rather than having to use STM32CubeIDE. 
+This is a quick guide that walks through the process of setting up VS Code for STM32 development. I wrote this because I wanted to make VS Code sort of my 'everything' editor to do all my coding (both embedded and non-embedded). 
 
 # The Software
 Before we begin, it's important to get to know our tools. 
