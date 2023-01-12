@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2022-12-28-stm32-development.md",
+                "file": "_projects/EMG Wearable Device (WIP).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-12-28-stm32-development.md"
+                "file": "_projects/EMG Wearable Device (WIP).md"
               }
             }
           },
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-12-28-stm32-development.md",
+                "file": "_projects/EMG Wearable Device (WIP).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,15 +124,15 @@
   },
   "active": "b8fc2abcde3ed467",
   "lastOpenFiles": [
-    "_posts/2022-12-26-emg-cookbook.md",
     "_posts/2022-12-28-stm32-development.md",
+    "_posts/2022-12-26-emg-cookbook.md",
+    "_projects/EMG Wearable Device (WIP).md",
     "index.md",
     "archive.md",
     "_posts/Untitled.md",
     "Untitled.md",
     "_posts/2022-12-24-stm32-development-on-windows.md",
     "Notes/Circuits.md",
-    "Hobby/Projects.md",
-    "Hobby/Embedded.md"
+    "Hobby/Projects.md"
   ]
 }
