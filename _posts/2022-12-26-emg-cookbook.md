@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "EMG Cookbook (WIP)"
+title: "EMG Cookbook"
 categories: misc
 ---
 

@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c15996f210070b01",
+            "id": "b8fc2abcde3ed467",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -122,17 +122,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "c15996f210070b01",
+  "active": "b8fc2abcde3ed467",
   "lastOpenFiles": [
     "_posts/2022-12-26-emg-cookbook.md",
     "_posts/2022-12-28-stm32-development.md",
-    "_posts/2022-12-24-stm32-development-on-windows.md",
+    "index.md",
+    "archive.md",
+    "_posts/Untitled.md",
     "Untitled.md",
+    "_posts/2022-12-24-stm32-development-on-windows.md",
     "Notes/Circuits.md",
     "Hobby/Projects.md",
-    "Hobby/Embedded.md",
-    "Notes/Maths.md",
-    "Hobby/EMG Project Log.md",
-    "Kanban.md"
+    "Hobby/Embedded.md"
   ]
 }

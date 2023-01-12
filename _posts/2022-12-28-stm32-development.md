@@ -9,11 +9,11 @@ This is a quick guide that walks through the process of setting up VS Code for S
 # The Software
 Before we begin, it's important to get to know our tools. 
 
-I use VS Code as my choice of code editor but any editor can work (even Notepad). If using VS Code, you'll need to install the C/C++ extension and Makefile tools extension (both from Microsoft).
+I use **VS Code** as my choice of code editor but any editor can work (even Notepad). If using VS Code, you'll need to install the C/C++ extension and Makefile tools extension (both from Microsoft).
 
-STM32CubeMX is a graphical configuration tool that lets you do things like set up peripherals, configure the clock, etc. It then generates the necessary initialization code to get things going. The important part is that CubeMX can generate makefiles which allows you to build your project without having to use an IDE. 
+**STM32CubeMX** is a graphical configuration tool that lets you do things like set up peripherals, configure the clock, etc. It then generates the necessary initialization code to get things going. The important part is that CubeMX can generate makefiles which allows you to build your project without having to use an IDE. 
 
-MSYS2 is a collection of tools that basically simulates a Linux/Unix-like environment on Windows. We use MSYS2 to install a few tools that we need such as the GNU ARM Embedded Toolchain which consists of 4 packages:
+**MSYS2** is a collection of tools that basically simulates a Linux/Unix-like environment on Windows. We use MSYS2 to install a few tools that we need such as the GNU ARM Embedded Toolchain which consists of 4 packages:
 - `arm-none-eabi-gcc`
 - `arm-none-eabi-gdb`
 - `arm-none-eabi-binutils`
@@ -23,10 +23,10 @@ We'll also install some other packages such as `stlink` which is a firmware prog
 
 You can also get all these tools without having to go through MSYS2 but I prefer it this way because it lets me set everything up within the MSYS2 shell without having to go around downloading stuff from multiple places. The MSYS2 shell also comes with `make` by default which allows you to use makefiles. 
 
-MSYS2 comes with multiple [<u>environments</u>](https://www.msys2.org/docs/environments/). I personally use the `UCRT64` environment but any of them should work. Add the path to the environment to the Path system environment variable. The path should look something like `C:\msys64\ucrt64\bin`
+MSYS2 comes with multiple [<u>environments</u>](https://www.msys2.org/docs/environments/). I personally use the `UCRT64` environment but any of them should work. Add the path to the MSYS2 environment to the PATH system variable. The MSYS2 environment path should look something like this: `C:\msys64\ucrt64\bin`
 
 # The Hardware
-The great thing about STM32s is that they're very accessible compared to other microcontrollers that are not Arduino/ESP32. You can get third-party 'Blue Pill' or 'Black Pill' development boards and an ST-LINK probe almost anywhere for cheap and even their official development boards such as the Nucleo boards are not that expensive. Here I'll using a Black Pill board. 
+The great thing about STM32s is that they're very accessible compared to other non-Arduino/ESP32 microcontrollers. You can get third-party development boards such as the 'Blue Pill' or 'Black Pill' and an ST-LINK probe almost everywhere for cheap and their official boards such as the Nucleo series are quite affordable too. Here I'll be using a Black Pill board. 
 
 To program/debug the STM32 using the ST-LINK, you'll need to connect the ST-LINK probe to the board. On the Black Pill, the pins are four right-angled header pins at the bottom of the board. The connections are as follows:
 
@@ -52,7 +52,7 @@ On the left you can see many categories to configure the various peripherals but
 
 Once you're done, go to the 'Project Manager' tab and give a name and location for your project. Make sure that the toolchain/IDE option is set to Makefile and click 'Generate Code'. This should generate a project at your desired location with all the necessary files and initialization code for you to get started. 
 
-Get on VS Code and open up the project folder. Open the main.c file (usually inside the Core/Src folder) and look for the while loop. Then, add some code in the loop to blink the LED:
+Get on VS Code and open up the project folder. Open the main.c file (usually inside the Core/Src folder) and look for the while(1) loop. Then, add some code in the loop to blink the LED:
 
 ```
 HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, 0);
