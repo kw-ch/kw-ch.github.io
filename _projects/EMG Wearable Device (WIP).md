@@ -7,7 +7,7 @@ layout: post
 # Version 0.1
 Version 0.1 is basically just a breakout board containing only the EMG sensing analog section of the system for prototyping and sanity checking purposes. I'm also quite new to PCB design so I do apologise if my layout and routing skills are horrible. 
 
-![[v0.1.png]]
+![](https://raw.githubusercontent.com/msuicc/msuicc.github.io/main/assets/v0.1.png?token=GHSAT0AAAAAAB3L7RSP46XUONHDVV3VIYLMY6AJNJQ)
 
 It consists of : 
 - An AC-coupled INA333 instrumentation amplifier (cutoff = 10 Hz)
