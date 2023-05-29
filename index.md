@@ -2,7 +2,7 @@
 layout: page
 title: About
 ---
-Hi, I'm msuicc. An electrical engineering student with interests in analogue electronics, embedded systems and signal processing. I build things and occasionally write about them here as well as posts that basically serve as information dumps. 
+Hi, I'm msuicc, an electrical engineering student who likes analog stuff, embedded stuff and signals. I write about the stuff I make here and sometimes about technical stuff that interest me. 
 
 <!---
 You can find my project logs [<u>here</u>](https://msuicc.github.io/projects)
