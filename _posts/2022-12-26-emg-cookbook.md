@@ -62,7 +62,7 @@ Regardless, an analog low-pass filter before the signal is sampled is always nee
 The Multiple Feedback topology can also be considered since Sallen-Key filters have an issue where the frequency response turns upward at higher frequencies because the signal feeds forward around the op-amp rather than going through it. This can be mitigated using higher value resistors but it creates more noise.
 
 
-## 4. Analysis/Interpretation
+## 4. Analysis/Interpretation (WIP)
 After filtering, the EMG signal will be sampled with an ADC (either a standalone one or an onboard one in a microcontroller). Further analysis can be done but the exact procedure depends largely on the use case. 
 
 For example, EMG-based gesture recognition could use machine learning and feature extraction techniques to classify various gestures (possibly in conjunction with an IMU or motion sensor). Simpler use cases might need very little further processing or none at all. 
