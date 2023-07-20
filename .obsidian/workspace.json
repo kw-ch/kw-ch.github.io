@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b8fc2abcde3ed467",
+            "id": "24355ad05886782f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_projects/EMG Wearable Device (WIP).md",
+                "file": "unused/2023-02-10-stm32-debug.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,6 +56,14 @@
                 "sortOrder": "alphabetical"
               }
             }
+          },
+          {
+            "id": "92e795aae2e70803",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -84,9 +92,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "_projects/EMG Wearable Device (WIP).md"
-              }
+              "state": {}
             }
           },
           {
@@ -95,7 +101,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_projects/EMG Wearable Device (WIP).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,14 +127,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "b8fc2abcde3ed467",
+  "active": "cfab40e4286de1c8",
   "lastOpenFiles": [
+    "_posts/2022-12-29-emg-cookbook.md",
+    "archive.md",
+    "unused/2023-02-10-stm32-debug.md",
     "_posts/2022-12-28-stm32-development.md",
+    "unused/2023-2-14-emg-electrodes.md",
+    "_projects/Mini Projects.md",
     "_posts/2022-12-26-emg-cookbook.md",
     "_projects/EMG Wearable Device (WIP).md",
     "index.md",
-    "archive.md",
-    "_posts/Untitled.md",
     "Untitled.md",
     "_posts/2022-12-24-stm32-development-on-windows.md",
     "Notes/Circuits.md",

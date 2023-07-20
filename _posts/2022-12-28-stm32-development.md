@@ -1,17 +1,21 @@
 ---
 layout: post
-title: "Getting Blinky on STM32 using STM32CubeMX, VSCode and MSYS2"
+title: "Getting Blinky on STM32 using STM32CubeMX, VSCode and MSYS2 on Windows"
 categories: misc
 ---
 
+EDIT: Rejoice! STMicroelectronics has made a VSCode extension for STM32. Though it is still new, and still has a ways to go, it's a step in the right direction.
+
 This is a quick writeup that walks through the process of setting up VSCode for STM32 development. I wanted to make VSCode my all-in-one code editor (for both embedded and non-embedded stuff) and this is how I did it. 
+
+Some of you may ask why don't I just use Linux. Well I'd love to switch over to Linux (and leave Windows entirely), but as a student, I sometimes need to download software that's not really well-supported (or at all) on Linux. I actually have a dual boot setup but I've found that having to constantly reboot to switch between the two OS's is a bit annoying so I mainly just compromise by using MSYS2 which is honestly good enough for me. I may switch over in the future and update this when I do.  
 
 # The Software
 Before we begin, it's important to get to know our tools. 
 
 In VSCode, you'll need to install the C/C++ extension and Makefile tools extension (both from Microsoft).
 
-**STM32CubeMX** is a graphical configuration tool that lets you do things like set up peripherals, configure the clock, etc. It then generates the necessary initialization code to get things going. The important part is that CubeMX can generate makefiles which allows you to build your project without having to use an IDE. 
+**STM32CubeMX** is a graphical configuration tool that lets you do things like set up peripherals, configure the clock, etc. It then generates the necessary initialization code to get things going. The important part is that CubeMX can generate makefiles which allows you to build your project without having to use the STM32CubeIDE. 
 
 **MSYS2** is a collection of tools that basically simulates a Linux/Unix-like environment on Windows. We use MSYS2 to install a few tools that we need such as the GNU ARM Embedded Toolchain which consists of 4 packages:
 - `arm-none-eabi-gcc`
@@ -19,9 +23,7 @@ In VSCode, you'll need to install the C/C++ extension and Makefile tools extensi
 - `arm-none-eabi-binutils`
 - `arm-none-eabi-newlib`
 
-We'll also install `stlink` which is a firmware programmer for STM32 microcontrollers using the ST-LINK probe. You should also download the Windows USB drivers for the ST-LINK probe from ST's website. 
-
-You can definitely get the toolchain without MSYS2 but I prefer it because it lets me set everything up all in one place. MSYS2 also comes with `make` by default which allows you to use makefiles. 
+We'll also install `stlink` which is a firmware programmer for STM32 microcontrollers using the ST-LINK probe and also install the Windows USB drivers for the ST-LINK probe from STMicroelectronics' website. 
 
 MSYS2 comes with multiple [<u>environments</u>](https://www.msys2.org/docs/environments/). I use the `UCRT64` environment but any of them should work. Add the path to the MSYS2 environment to the PATH system variable. The MSYS2 environment path should look something like this: `C:\msys64\ucrt64\bin`
 
@@ -42,7 +44,7 @@ To test whether your ST-LINK is detecting the STM32 correctly, type `st-info --p
 ![image](/assets/stinfo.png)
 
 # Getting Blinky
-With everything in place, we can get started with coding. We'll be doing the ubiquitous LED blinker to demonstrate the build process. 
+With everything in place, we can get started the code. We'll be doing the ubiquitous blinky program to demonstrate the build process. 
 
 Open up STM32CubeMX and click on 'Access to MCU Selector' to start a project. Search for your STM32 model (for the Black Pill this is the STM32F411CEU6). 
 
@@ -61,7 +63,7 @@ HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, 1);
 HAL_Delay(1000);
 ```
 
-You may need to modify the above code to match with your development board. 
+Of course, you may need to modify the above code for your specific case. 
 
 # Building and Flashing
 With the coding done, we can now build the project and flash it to the Black Pill. To build the project, open up your MSYS2 shell and navigate to your project folder. Then run `make` and the project should start building. 
@@ -70,6 +72,4 @@ You'll find a new folder inside your project folder called 'build'. Enter this f
 
 ![image](/assets/makeoutput.png)
 
-Don't worry about the warning message 'NRST is not connected'. This happens if you're using a Blue/Black Pill board since they don't have an NRST pin on the board for the ST-LINK probe (it has only 4 pins, 3.3V, GND, SWCLK, SWDIO).   
-
-If successful, the LED on the board should start blinking. 
+Don't worry about the warning message 'NRST is not connected'. This happens if you're using a development board that doesn't have an NRST pin on the board for the ST-LINK probe (quite common with third party boards). If the board was successfully flashed, the LED on the board should start blinking. 

@@ -7,11 +7,13 @@ categories: misc
 An information dump for all things EMG. 
 
 # What is EMG?
-Electromyography (EMG for short) is a medical diagnostic technique for recording the electrical activity produced by muscles. When you move a muscle, your brain tells it to move using electrical signals travelling through your nervous system and these signals can be detected and measured. EMG signals typically have voltages in the range of μV to mV peak to peak.
+Electromyography (EMG for short) is a medical diagnostic technique for recording the electrical activity produced by muscles. When you move a muscle, your brain tells it to move using electrical signals that travel through your nervous system. These signals can be detected and measured using electrodes. EMG signals typically have voltages in the range of μV to mV peak to peak.
 
-EMG is used for a variety of medical monitoring and diagnostic purposes but it's also gaining popularity in electrical/mechatronics/biomedical engineering as a control signal in human-machine interfaces (think stuff like prosthetics, electric wheelchairs, robots, computers, flight systems, etc). 
+EMG is used for a variety of medical monitoring and diagnostic purposes but it's also gaining popularity in biomedical engineering as a control signal in human-machine interfaces (think stuff like prosthetics, electric wheelchairs, robots, computers, flight systems, etc). 
 
-For non-medical purposes, EMG signals are generally measured through **surface EMG**, a technique that involves contact between conductive electrodes and the surface of the skin at the targetted muscle. For brevity, further mentions of EMG refers to surface EMG. 
+EMG signals are measured either through a needle electrode or surface electrodes. Obviously, it would be very inconvenient to stick a needle into your muscle every time you want to use an EMG device so for non-medical uses, EMG signals are measured using surface electrodes (AKA surface EMG or sEMG) that are stuck onto the surface of the skin at the target muscle. For the sake of brevity, further mentions of EMG here are referring to sEMG. 
+
+For non-medical purposes, EMG signals are generally measured through **surface EMG**, a technique that involves contact between conductive electrodes and the surface of the skin at the targetted muscle. For brevity, further mentions of EMG here refers to surface EMG. 
 
 # EMG Design Overview
 Generally, an EMG device consists of several stages: 
@@ -23,11 +25,11 @@ Generally, an EMG device consists of several stages:
 ## 1. Acquisition
 Electrodes used to measure EMG signals generally fall into one of two categories: gel electrodes and dry electrodes. 
 
-Gel electrodes contain a conductive gel that acts as an interface between the skin and the electrode. This improves contact, reduces skin impedance and provides some noise resiliency which helps with signal detection. However gel electrodes are expensive and non-reusable, making them not very practical for frequent use. Long term exposure to the gel and adhesive may also cause irritation.  
+Gel electrodes contain a conductive gel that acts as an interface between the skin and the electrode. This improves contact, reduces skin impedance and provides some noise resiliency which helps with signal detection. However gel electrodes are expensive and non-reusable, making them not very practical for frequent use. The gel and adhesive on them can also make it uncomfortable to wear for extended periods of time and may cause irritation. 
 
-Dry electrodes do not have gel or adhesive so they are reusable, making them the preferred choice for long-term monitoring and non-medical usage due to their convenience and ease of use. EMG signals obtained from dry electrodes are generally considered lower quality compared to gel electrodes as they are more susceptible to noise and bad skin contact. The lack of adhesive can also cause movement of the electrodes relative to the surface of the skin, distorting the signal. Fortunately, most of these issues can be addressed through proper construction of the EMG device and firmware. 
+Dry electrodes do not have gel or adhesive so they are reusable, making them the preferred choice for long-term monitoring and non-medical usage. EMG signals obtained from dry electrodes are generally of lower quality than gel electrodes as they are more susceptible to noise and bad skin contact. The lack of adhesive can also cause movement of the electrodes relative to the surface of the skin, distorting the signal. Fortunately, most of these issues can be addressed through proper construction of the EMG device and firmware. 
 
-There isn't really any consensus as to what is the best design for dry electrodes. There are some recommendations such as the size of electrodes should be a maximum of 10mm parallel to the muscle and the center-to-center distance between electrodes should be ~20mm at most. However some designs don't follow these and still achieve a decent quality EMG signal. 
+There isn't really exactly a consensus as to what is the best design for dry electrodes. There are some recommendations such as the size of electrodes should be a maximum of 10mm parallel to the muscle and the center-to-center distance between electrodes should be ~20mm at most. 
 
 'Professional' dry electrodes are typically made of silver. Cheaper and more accessible alternative materials include stainless steel, aluminium and copper. Some hobbyist designs use items such as thumb-tacks, screws, sheet metal, snap buttons and even PCBs with milled-out surfaces of copper as dry electrodes. 
 
@@ -58,7 +60,7 @@ However, digital filters are computationally heavy and your processor can get ov
 Regardless, an analog low-pass filter before the signal is sampled is always needed to avoid aliasing. A Sallen-Key filter is the most commonly used low-pass filter for EMG but a simple passive filter can work. The Multiple Feedback topology can also be considered since Sallen-Key filters have an issue where the frequency response turns upward at higher frequencies because the signal feeds forward around the op-amp rather than going through it. This can be mitigated using higher value resistors but it creates more noise.
 
 
-## 4. Analysis/Interpretation (WIP)
-After filtering, the EMG signal will be sampled with an ADC (either a standalone one or an onboard one in a microcontroller). Further analysis can be done but the exact procedure depends largely on the use case. 
+## 4. Analysis/Interpretation
+After filtering and sampling to digitized the signal, further analysis can be done. Exactly what kind of analysis largely depends on the use case.  
 
-For example, EMG-based gesture recognition could use machine learning and feature extraction techniques to classify various gestures (possibly in conjunction with an IMU or motion sensor). Simpler use cases might need very little further processing or none at all. 
+For example, EMG-based gesture recognition could use machine learning and feature extraction techniques to classify various gestures (possibly in conjunction with an IMU or motion sensor to identify more gestures and/or increase the accuracy of gesture recognition). A simple diagnostic/monitoring system may just extract a few features such as the peak values. 
