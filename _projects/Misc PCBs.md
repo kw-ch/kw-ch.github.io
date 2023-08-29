@@ -5,7 +5,7 @@ layout: post
 ---
 
 # LSM6DSL
-![image](/assets/lsm6dsl.png)
+![image](/assets/lsm6dsl.jpg)
 A breakout board for the LSM6DSL IMU from STMicroelectronics. It's pretty simple, just has the required components and pull-up resistors for I2C. 
 
 
