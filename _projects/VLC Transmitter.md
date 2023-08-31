@@ -24,7 +24,7 @@ To start off this project I began work on two core modules of this system: the U
 
 I based the UART receiver module design on the many modules already available on the web. I basically just took different parts of different modules and integrated them together to get the features I need. 
 
-The Pulse Generator module consists of a finite state machine that is triggered when a 'dataReady' flag is set. It sets the output to the first bit in the input bit stream and shifts out the 'used' bit as its bit period is reached. 
+The Pulse Generator module consists of a finite state machine (FSM). This FSM is triggered when a 'dataReady' flag is set. It will then take in a bitstream and pulse a GPIO pin by setting it to the current value of the MSB in the bitstream for a specified bit period. Once the bit period is up, the bitstream is shifted to the left so that the 'used' bit is removed and 2nd most significant bit becomes the new MSB and thus becomes the new output to the GPIO pin. 
 
 This is how the testing setup looks like:
 ![image](/assets/setup.jpg)
@@ -35,10 +35,19 @@ The oscilloscope was not connected in the above image, but here's a picture show
 # Part 2: VPPM Module 
 After getting the UART and Pulse Generator done, it's time for the main event: the VPPM modulator. 
 
-VPPM is essentially a combination of PWM and PPM, where the position of the pulse within a pulse period is varied based on whether the current bit is a '0' or '1'. The width of the pulse is varied based on the desired dimming level of the LED. 
+VPPM is essentially a combination of PWM and PPM, where the position of the pulse within a pulse period is used to represent a '0' or '1'. A '0' is represented by a pulse in the beginning of the period whreas a '1' is represented by a pulse at the end of the period. The width of the pulse is varied based on the desired dimming level of the LED. 
 
-To implement this, I first define a pulse as a stream of bits. I mapped a '1' input to the right half of the pulse period (LSB of the stream) and a '0' input to the left half of the pulse period (MSB of the stream). 
+While this sounds simple, implementing this in Verilog is quite a challenge as controlling the timing of the pulse and varying the pulse position within the period is definitely non-trivial. However there is a bit of a workaround to achieve this without the need of complicated timing logic. 
 
-(I know this is hard to visualize based on text alone so I'll probably make some diagrams to put here when I have the time/remember to)
+Rather than trying to map the pulse to a specific position and time, we can instead define the entire pulse period as a stream of bits. We can then control the position of the pulse by setting the appropriate bits to a '1'. This makes our job significantly easier as the logic to implement this is much simpler. The timing element is already implemented in the Pulse Generator so we can take advantange of that to control the pulse period instead. 
 
-Part 3: The FIFO Buffer (WIP)
+Part 3: The FIFO Buffer
+At this point, the system is demonstrably working but not exactly practical as so far it is just being tested with just single byte inputs from the PC. Real communication systems don't deal with single bytes but rather a continuous stream of data. This is where the First-In First-Out (FIFO) buffer comes in. 
+
+A FIFO buffer is essentially just a block of memory that holds temporarily data which is not needed yet or can't be read immediately due to ongoing processing happening down the line. As its name implies, it operates on a first-in, first-out basis, where the first bit of data that went in is also the first one to be processed. It's analogous to queuing up in real life, where the first person in the queue gets serviced first. 
+
+Writing a FIFO buffer from scratch is a huge task, hence the easier solution is to use one of the existing IP cores from Altera. I used a FIFO buffer capable of storing 128 bits, this translates to 16 bytes which considering the speed of our system, should be enough of a buffer. 
+
+In an effort to make things more platform-independent, I also wrote a 'wrapper' module that allows interfacing with the FIFO buffer IP core in such a way that allows me to swap between IP cores from different vendors. This way, I am not chained to just Altera but can easily migrate the system to a different FPGA vendor should the need arises. 
+
+Part 4: Packetizing (WIP)
