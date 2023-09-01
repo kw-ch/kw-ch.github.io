@@ -1,30 +1,26 @@
 ---
 title: VLC Transmitter
-description: A Transmitter for Visible Light Communications on an FPGA
+description: Undergraduate research project involving the design of a transmitter for a visible light communication system on an FPGA
 layout: post
 ---
 
 *This project was undertaken as part of an undergraduate research program at Monash University Malaysia.*
 
-WORK IN PROGRESS
-
-This is an ongoing project involving the design of a transmitter for an LED-based visible light communication system and its implementation on an Altera FPGA (Altera DE2-70 development board). 
+**WORK IN PROGRESS**
 
 # Overview
 ![image](/assets/vlc_block.drawio.png)
 
-Data is sent from a PC via UART, using a USB-UART bridge module. 
+The overall system is relatively simple, data is sent from a PC via UART, using a USB-UART bridge module. This data is then stored in a FIFO buffer for flow control (to temporarily hold the data in case it can't immediately be processed). Each byte from the FIFO is then passed to a packetizer which essentially concatenates a bunch of individual bytes into a larger word with multiple bytes. 
 
-This data is then stored in a FIFO buffer for flow control. The data is then passed to a packetizer which essentially concatenates a bunch of individual bytes into a larger 16 byte word. 
-
-These bytes are then passed into a modulator module that performs variable pulse position modulation (VPPM) and the output from this is in fed into a pulse generator module that pulses a GPIO pin on the FPGA dev board.
+These bytes are then passed into a modulator that performs variable pulse position modulation (VPPM) and the output from this is in fed into a pulse generator module that pulses a GPIO pin on the FPGA dev board to generate the actual physical pulses representing this data.
 
 # Part 1: UART and The Pulse Generator
-To start off this project I began work on two core modules of this system: the UART receiver and Pulse Generator. 
+The initial work of this project involves the two core modules of this system: the UART receiver and Pulse Generator. 
 
-I based the UART receiver module design on the many modules already available on the web. I basically just took different parts of different modules and integrated them together to get the features I need. 
+The UART receiver module design is essentially just a hacked together mix of various modules already available on the web to get the features I needed. 
 
-The Pulse Generator module consists of a finite state machine (FSM). This FSM is triggered when a 'dataReady' flag is set. It will then take in a bitstream and pulse a GPIO pin by setting it to the current value of the MSB in the bitstream for a specified bit period. Once the bit period is up, the bitstream is shifted to the left so that the 'used' bit is removed and 2nd most significant bit becomes the new MSB and thus becomes the new output to the GPIO pin. 
+The Pulse Generator module consists of a finite state machine (FSM). When there is incoming data that is ready to be read, it will then take in the bitstream and pulse a GPIO pin by setting it to the current value of the MSB in the bitstream for a specified bit period. Once the bit period is up, the bitstream is shifted to the left so that the 'used' bit is removed and 2nd most significant bit becomes the new MSB and thus becomes the new output to the GPIO pin. 
 
 This is how the testing setup looks like:
 ![image](/assets/setup.jpg)
@@ -33,9 +29,7 @@ The oscilloscope was not connected in the above image, but here's a picture show
 ![image](/assets/w_uart.jpg)
 
 # Part 2: VPPM Module 
-After getting the UART and Pulse Generator done, it's time for the main event: the VPPM modulator. 
-
-VPPM is essentially a combination of PWM and PPM, where the position of the pulse within a pulse period is used to represent a '0' or '1'. A '0' is represented by a pulse in the beginning of the period whreas a '1' is represented by a pulse at the end of the period. The width of the pulse is varied based on the desired dimming level of the LED. 
+Time for the main event: the VPPM modulator. VPPM is essentially a combination of PWM and PPM, where the position of the pulse within a pulse period is used to represent a '0' or '1'. A '0' is represented by a pulse in the beginning of the period whreas a '1' is represented by a pulse at the end of the period. The width of the pulse is varied based on the desired dimming level of the LED. 
 
 While this sounds simple, implementing this in Verilog is quite a challenge as controlling the timing of the pulse and varying the pulse position within the period is definitely non-trivial. However there is a bit of a workaround to achieve this without the need of complicated timing logic. 
 
