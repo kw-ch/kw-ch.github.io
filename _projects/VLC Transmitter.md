@@ -41,7 +41,7 @@ While this sounds simple, implementing this in Verilog is quite a challenge as c
 
 Rather than trying to map the pulse to a specific position and time, we can instead define the entire pulse period as a stream of bits. We can then control the position of the pulse by setting the appropriate bits to a '1'. This makes our job significantly easier as the logic to implement this is much simpler. The timing element is already implemented in the Pulse Generator so we can take advantange of that to control the pulse period instead. 
 
-Part 3: The FIFO Buffer
+# Part 3: The FIFO Buffer
 At this point, the system is demonstrably working but not exactly practical as so far it is just being tested with just single byte inputs from the PC. Real communication systems don't deal with single bytes but rather a continuous stream of data. This is where the First-In First-Out (FIFO) buffer comes in. 
 
 A FIFO buffer is essentially just a block of memory that holds temporarily data which is not needed yet or can't be read immediately due to ongoing processing happening down the line. As its name implies, it operates on a first-in, first-out basis, where the first bit of data that went in is also the first one to be processed. It's analogous to queuing up in real life, where the first person in the queue gets serviced first. 
@@ -50,4 +50,4 @@ Writing a FIFO buffer from scratch is a huge task, hence the easier solution is 
 
 In an effort to make things more platform-independent, I also wrote a 'wrapper' module that allows interfacing with the FIFO buffer IP core in such a way that allows me to swap between IP cores from different vendors. This way, I am not chained to just Altera but can easily migrate the system to a different FPGA vendor should the need arises. 
 
-Part 4: Packetizing (WIP)
+# Part 4: Packetizing (WIP)
