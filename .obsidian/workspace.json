@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "unused/2023-02-10-stm32-debug.md",
+                "file": "unused/2023-02-14-dsp-part-1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8418078f10b3c476",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_projects/Mini Projects.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -92,7 +105,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "_projects/Mini Projects.md"
+              }
             }
           },
           {
@@ -101,6 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "_projects/Mini Projects.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,13 +143,16 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "cfab40e4286de1c8",
+  "active": "8418078f10b3c476",
   "lastOpenFiles": [
-    "_posts/2022-12-29-emg-cookbook.md",
-    "archive.md",
-    "unused/2023-02-10-stm32-debug.md",
+    "unused/2023-02-14-dsp-part-1.md",
+    "unused/2023-02-14-dsp-part-1 1.md",
     "_posts/2022-12-28-stm32-development.md",
     "unused/2023-2-14-emg-electrodes.md",
+    "unused/2023-02-10-stm32-debug.md",
+    "unused/Untitled.md",
+    "_posts/2022-12-29-emg-cookbook.md",
+    "archive.md",
     "_projects/Mini Projects.md",
     "_posts/2022-12-26-emg-cookbook.md",
     "_projects/EMG Wearable Device (WIP).md",

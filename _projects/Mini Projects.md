@@ -1,6 +1,6 @@
 ---
 title: Mini Projects
-description: A list of mini projects just to exercise my embedded programming muscles.
+description: A list of small and quick projects I did to exercise my electronics muscles.
 layout: post
 ---
 
