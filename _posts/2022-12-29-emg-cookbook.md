@@ -61,6 +61,4 @@ Regardless, an analog low-pass filter before the signal is sampled is always nee
 
 
 ## 4. Analysis/Interpretation
-After filtering and sampling to digitized the signal, further analysis can be done. Exactly what kind of analysis largely depends on the use case.  
-
-For example, EMG-based gesture recognition could use machine learning and feature extraction techniques to classify various gestures (possibly in conjunction with an IMU or motion sensor to identify more gestures and/or increase the accuracy of gesture recognition). A simple diagnostic/monitoring system may just extract a few features such as the peak values. 
+The digitized signal can be further analyzed depending on the specific use case. For example, using EMG gesture recognition would require heavy use of feature extraction and pattern recognition techniques to classify various gestures. Sometimes EMG data may also be combined with data from an inertial measurement unit (IMU) which can give motion and orientation data. 
