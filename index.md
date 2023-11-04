@@ -2,7 +2,7 @@
 layout: page
 title: About
 ---
-Hi! I'm msuicc, electrical engineering student and maker. Here, I write about the things I make and other stuff (if I remember to). 
+Hi! I'm kwch, electrical engineering student and electronics hobbyist. Here, I write about my projects (both personal and academic) as well as random blog posts (assuming I remember this exists). 
 
 <!---
 You can find my project logs [<u>here</u>](https://msuicc.github.io/projects)
