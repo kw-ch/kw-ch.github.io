@@ -8,8 +8,6 @@ EDIT: Rejoice! STMicroelectronics has made a VSCode extension for STM32. Though 
 
 This is a quick writeup that walks through the process of setting up VSCode for STM32 development. I wanted to make VSCode my all-in-one code editor (for both embedded and non-embedded stuff) and this is how I did it. 
 
-Some of you may ask why don't I just use Linux. Well I'd love to switch over to Linux (and leave Windows entirely), but as a student, I sometimes need to download software that's not really well-supported (or at all) on Linux. I actually have a dual boot setup but I've found that having to constantly reboot to switch between the two OS's is a bit annoying so I mainly just compromise by using MSYS2 which is honestly good enough for me. I may switch over in the future and update this when I do.  
-
 # The Software
 Before we begin, it's important to get to know our tools. 
 
@@ -72,4 +70,4 @@ You'll find a new folder inside your project folder called 'build'. Enter this f
 
 ![image](/assets/makeoutput.png)
 
-Don't worry about the warning message 'NRST is not connected'. This happens if you're using a development board that doesn't have an NRST pin on the board for the ST-LINK probe (quite common with third party boards). If the board was successfully flashed, the LED on the board should start blinking. 
+Don't worry about the warning message `NRST is not connected`. This happens if you're using a development board that doesn't have an NRST pin on the board for the ST-LINK probe (quite common with third party boards). If the board was successfully flashed, the LED on the board should start blinking. 

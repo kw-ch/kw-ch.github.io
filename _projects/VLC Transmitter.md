@@ -4,7 +4,7 @@ description: Undergraduate research project involving the design of a transmitte
 layout: post
 ---
 
-*This project was undertaken as part of an undergraduate research program at Monash University Malaysia.*
+*This project was undertaken as part of an undergraduate research program
 
 **WORK IN PROGRESS**
 
@@ -44,4 +44,16 @@ Writing a FIFO buffer from scratch is a huge task, hence the easier solution is 
 
 In an effort to make things more platform-independent, I also wrote a 'wrapper' module that allows interfacing with the FIFO buffer IP core in such a way that allows me to swap between IP cores from different vendors. This way, I am not chained to just Altera but can easily migrate the system to a different FPGA vendor should the need arises. 
 
-# Part 4: Packetizing (WIP)
+# Part 4: Packetizing
+While the UART protocol is convenient and easy to use, its data rates are quite slow and since the FPGA can operate at significantly faster speeds, the UART protocol starts to become a bottleneck in terms of data throughput. 
+
+I could change over to a different communication protocol like USB, but implementing them is significantly more difficult and given the time constraints of this project, it's not really a feasible option. 
+
+Hence the solution is to basically keep the transmitter busy by collecting incoming bytes and consolidating them into a single packet first before sending it off to the pulse generator module. By keeping the pulse generator module active, it gives the illusion that the system is continously transmitting data. It doesn't actually make it faster, but it does it improve the overall efficiency of data transfer by reducing idle time and continously processing and sending data rather than sending data in bursts. It also makes better use of the available UART bandwidth. 
+
+This module too has its own FIFO buffer to facilitate collecting 8-bit data bytes into a longer 128-bit word. 
+
+# Part 5: Integration
+So far I've been primarily developing each of the modules independently but I have been regularly integrating them throughout the project, namely the UART Receiver, VPPM Modulator and Pulse Generator modules. These 3 modules were fairly easy to integrate as it simply involved connecting their inputs and outputs together in sequence. 
+
+However the challenge came with the FIFO buffer and Packetizer. These two posed quite a big challenge due to the amount of signalling required to properly interface with them. The delay between the various signals being set and reset with respect to the actual state of the module also made it difficult to get things working as there can be cases where the FIFO buffer is already full but there is a delay in setting the 'full' flag. 

@@ -15,12 +15,11 @@ EMG signals are measured either through a needle electrode or surface electrodes
 
 For non-medical purposes, EMG signals are generally measured through **surface EMG**, a technique that involves contact between conductive electrodes and the surface of the skin at the targetted muscle. For brevity, further mentions of EMG here refers to surface EMG. 
 
-# EMG Design Overview
-Generally, an EMG device consists of several stages: 
+# EMG Signal Acquisition Overview
+Generally, an EMG device used for signal acquisition consists of several stages: 
 1. Acquisition
 2. Amplification
 3. Filtering
-4. Analysis/Interpretation
 
 ## 1. Acquisition
 Electrodes used to measure EMG signals generally fall into one of two categories: gel electrodes and dry electrodes. 
@@ -50,7 +49,7 @@ Some commonly used instrumentation amplifiers include the INA128 and INA333, bot
 
 In some cases further amplification may be necessary if the gain accuracy of the instrumentation amplifier is bad at high gains. 
 
-## 3. Filtering
+## 3. Filtering 
 The frequency range of EMG signals is mainly concentrated between 0Hz to 500Hz with most of the energy between 50Hz to 150Hz. EMG signals are typically bandpass-filtered with a passband between 10-20Hz to 500Hz. The High-pass filtering is necessary due to movement artifacts and the low-pass filtering is needed for anti-aliasing. You may be tempted to implement a sharp notch filter to remove mains noise (50/60Hz) but this is generally not recommended as this is in within the range where most of the signal energy is contained. 
 
 Filters can either be implemented in hardware (analog) or software (digital). Digital filters generally have better performance (steeper roll-off, higher stopband attenuation, lower passband ripple). Since they are implemented in software, this means less hardware is required in the design, lowering the cost. Unlike analog filters, digital filters are unaffected by external factors that may affect the performance of components in an analogue filter such as noise, inaccuracy in the resistors and capacitors, etc. 
@@ -59,6 +58,3 @@ However, digital filters are computationally heavy and your processor can get ov
 
 Regardless, an analog low-pass filter before the signal is sampled is always needed to avoid aliasing. A Sallen-Key filter is the most commonly used low-pass filter for EMG but a simple passive filter can work. The Multiple Feedback topology can also be considered since Sallen-Key filters have an issue where the frequency response turns upward at higher frequencies because the signal feeds forward around the op-amp rather than going through it. This can be mitigated using higher value resistors but it creates more noise.
 
-
-## 4. Analysis/Interpretation
-The digitized signal can be further analyzed depending on the specific use case. For example, using EMG gesture recognition would require heavy use of feature extraction and pattern recognition techniques to classify various gestures. Sometimes EMG data may also be combined with data from an inertial measurement unit (IMU) which can give motion and orientation data. 

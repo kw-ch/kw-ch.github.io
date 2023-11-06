@@ -9,8 +9,6 @@
   },
   "showLineNumber": false,
   "livePreview": true,
-  "spellcheckLanguages": [
-    "en-GB"
-  ],
+  "spellcheckLanguages": null,
   "spellcheck": false
 }
