@@ -5,13 +5,17 @@ categories: misc
 ---
 
 # The Dry Electrode Challenge
-For the past few months, I have been working on a simple EMG device that basically just consists of electrodes connected to an ADC interfaced with an MCU. One of the most frustrating parts of this project actually doesn't even have anything to do with the electronics side of things, but rather finding something appropriate to use as dry electrodes. 
+For the past few months over my break, I have been working on prototyping an EMG sensor. To this end, I designed a breakout board with electrodes connected to an ADC interfaced with an MCU. Using some gel electrodes I bought for cheap online, I was at least able to do a sanity check on my circuit. Good news, it works. 
 
-In my quest to find the perfect dry electrode, I have looked at a few possible options that seem to be quite commonly used in already existing EMG devices designed by hobbyists online, however all of them seem to come a few tradeoffs that I'm not really willing to make. I'm sure they're fine solutions but my internal pedanticness (is that even a word?) wouldn't allow it. 
+But now it was time for the next challenge: dry electrodes. The main problem with dry electrodes is that it's kinda hard to find something suitable for the job. Commercial EMG sensors with dry electrodes typically use stainless steel electrodes in the shape of a bar or disc. However, it would be difficult for me to replicate this as I don't have any means of fabricating them. There also doesn't seem to be any place where I could be something similar to these electrodes.
 
-Some projects I saw use hex nuts or binding screws as the electrodes. However I feel that this solution takes a lot of valuable board space and makes the PCB layout quite awkward to do especially if you want to adhere to the recommendations of keeping the centre-to-centre distance between detecting electrodes to be ~20mm at most. Adding in a reference electrode makes it even more awkward to lay out the PCB hence I decided to scrap this idea. 
+Hence, in my quest to find the perfect dry electrode, I have looked at a few possible options that seem to be quite commonly used in some hobbyist EMG sensors I found online. Some used hex nuts or binding screws as the electrodes. This seems to work well for them but I feel that this solution takes a lot of valuable space and makes the PCB layout quite awkward to do especially if you want to adhere to recommendation for electrode spacing and placement. 
 
-Then there were projects that used copper pads milled from the PCB itself (basically just big SMD pads) as the electrodes. This was quite an improvement as unlike screws, they don't have to go through the board, meaning the entire top side is free for my component layout as there are no screw holes. However these copper pads aren't exactly the best for long-term use as they're not sweat resistant and will likely corrode over time. Some PCB surface finishes such as ENIG or OSP can make copper pads more corrosion resistant but these finishes are typically expensive, and considering that I'm a broke student, ordering different iterations of prototype boards may just burn a hole in my wallet. 
+Some used copper pads on the PCB itself (basically just big SMD pads) as the electrodes. This was pretty neat as it means that the entire top side is free as there are no screw holes. However this isn't a good long-term solution as they're not sweat resistant and will likely corrode over time. Some PCB surface finishes such as ENIG or OSP can make copper pads more corrosion resistant but these finishes are typically expensive.
 
-# Enter: The Capacitive Electrode
-Capacitive electrodes are non-contact electrodes that measure biosignals via capacitive coupling, using the human skin and the electrode as two ends of a capacitor. The only caveat to this is that the use of capacitive electrodes are relatively new and is still that is being actively researched. However, the results from a papers I've seen are pretty promising and their construction is actually a lot more feasible (for me) compared to traditional dry electrodes because the 'coupling capacitor' on the electrode can be formed using a solid copper layer on the bottom of a PCB. 
+# Capacitive Electrodes
+Capacitive electrodes are non-contact electrodes that measure biosignals via capacitive coupling, using the human skin and the electrode as two ends of a capacitor. 
+
+
+
+because the 'coupling capacitor' on the electrode can be formed using a solid copper layer on the bottom of a PCB. 

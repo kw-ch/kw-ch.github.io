@@ -4,12 +4,14 @@ description: Undergraduate research project involving the design of a transmitte
 layout: post
 ---
 
-*This project was undertaken as part of an undergraduate research program
+*This project was undertaken as part of an undergraduate research program.
 
 **WORK IN PROGRESS**
 
 # Overview
 ![image](/assets/vlc_block.drawio.png)
+
+For a bit of background on visible light communication, you can see my post [here](/_posts/2023-03-29-vlc.md).
 
 The overall system is relatively simple, data is sent from a PC via UART, using a USB-UART bridge module. This data is then stored in a FIFO buffer for flow control (to temporarily hold the data in case it can't immediately be processed). Each byte from the FIFO is then passed to a packetizer which essentially concatenates a bunch of individual bytes into a larger word with multiple bytes. 
 
