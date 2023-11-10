@@ -4,7 +4,7 @@ description: A wireless, wearable EMG sensor in the form of an armband
 layout: post
 ---
 
-**WORK IN PROGRESS, CURRENTLY ON HOLD INDEFINITELY**
+**CURRENTLY ON HOLD INDEFINITELY**
 
 2023 UPDATE: As of April 2023 this project has been temporarily shelved. I do have plans to come back to it eventually (I already have some ideas for revamping the whole design) but due to lack of time (and money) I've decided to shelve this project for future me to come back to. 
 

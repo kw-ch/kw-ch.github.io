@@ -51,11 +51,13 @@ While the UART protocol is convenient and easy to use, its data rates are quite 
 
 I could change over to a different communication protocol like USB, but implementing them is significantly more difficult and given the time constraints of this project, it's not really a feasible option. 
 
-Hence the solution is to basically keep the transmitter busy by collecting incoming bytes and consolidating them into a single packet first before sending it off to the pulse generator module. By keeping the pulse generator module active, it gives the illusion that the system is continously transmitting data. It doesn't actually make it faster, but it does it improve the overall efficiency of data transfer by reducing idle time and continously processing and sending data rather than sending data in bursts. It also makes better use of the available UART bandwidth. 
+Hence the solution is to basically keep the transmitter busy by collecting incoming bytes and consolidating them into a single packet first before sending it off to the pulse generator module. By keeping the pulse generator module active, it gives the illusion that the system is continously transmitting data. It doesn't actually make it faster, but it does improve the overall efficiency of data transfer by reducing idle time and having it continously processing and sending data rather than sending data in bursts. It also makes better use of the available UART bandwidth. 
 
 This module too has its own FIFO buffer to facilitate collecting 8-bit data bytes into a longer 128-bit word. 
 
 # Part 5: Integration
-So far I've been primarily developing each of the modules independently but I have been regularly integrating them throughout the project, namely the UART Receiver, VPPM Modulator and Pulse Generator modules. These 3 modules were fairly easy to integrate as it simply involved connecting their inputs and outputs together in sequence. 
+The largely modular nature of Verilog means that integrating different parts of the design is not too painful. However there were some modules that gave a lot of trouble: the FIFO buffer and Packetizer. 
 
-However the challenge came with the FIFO buffer and Packetizer. These two posed quite a big challenge due to the amount of signalling required to properly interface with them. The delay between the various signals being set and reset with respect to the actual state of the module also made it difficult to get things working as there can be cases where the FIFO buffer is already full but there is a delay in setting the 'full' flag. 
+In particular, there is a delay between the FIFO buffer becoming full/empty and the full/empty flags being set. This can cause some issues as during the delay, the other modules can attempt to write to or read from the buffer, causing data loss (for overflow) or invalid data being transmitted (for underflow).
+
+The simple solution I came up with is to just add a delay of 5 clock cycles to the modules that write and read to/from the FIFO buffer to account for the delay in the flags. This is a bit of a hacky solution and in hindsight I should be making use of the almost full and almost empty flags but it works for now. (I'll most likely regret this later)
