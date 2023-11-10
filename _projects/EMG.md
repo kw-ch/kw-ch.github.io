@@ -6,11 +6,7 @@ layout: post
 
 **WORK IN PROGRESS, CURRENTLY ON HOLD INDEFINITELY**
 
-2023 UPDATE: Unfortunately, this project didn't really progress much past the signal acquisition stage due to a lack of time (and resources, damn chip shortages). Also, looking back on it, I think it was a bit overly ambitious and I got overwhelmed with the amount of things I needed to do for this project. 
-
-I do intend to come back to this project some time in the future, taking smaller steps and rather than trying to make one big thing at once, I'll instead focus on continuously improving it. But for now this project is shelved. 
-
-That being said, I don't think this was a waste of my time as I learned quite a lot from it. 
+2023 UPDATE: As of April 2023 this project has been temporarily shelved. I do have plans to come back to it eventually (I already have some ideas for revamping the whole design) but due to lack of time (and money) I've decided to shelve this project for future me to come back to. 
 
 # Background
 When I first learned about signal processing in uni, I was kinda hooked on it. I didn't really like the mathy and theoretical part of it that much (even though it was basically like 90% of the course) but I enjoyed doing the labs and assignment which were more application-based. 
@@ -22,7 +18,7 @@ That's when I came across EMG sensors instead. Now EMG sensors definitely have m
 
 # Signal Acquisition
 ![image](/assets/in-amp.png)
-The signal acquisition stage consists has the INA333 instrumentation amplifier (in-amp) at its core. With a gain resistor value of 1k, this makes the gain of the in-amp 100.
+The signal acquisition stage consists of the INA333 instrumentation amplifier (in-amp) at its core. With a gain resistor value of 1k, this makes the gain of the in-amp 100.
 
 The in-amp is also AC coupled and the resistor and capacitor values for AC coupling gives it a cutoff frequency of 20Hz. The output of the in-amp (also the input to the ADC) has an RC low pass filter with a cutoff frequency of 500Hz. 
 
