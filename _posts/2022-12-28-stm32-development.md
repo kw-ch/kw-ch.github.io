@@ -4,9 +4,7 @@ title: "Getting Blinky on STM32 using STM32CubeMX, VSCode and MSYS2 on Windows"
 categories: misc
 ---
 
-EDIT: Rejoice! STMicroelectronics has made a VSCode extension for STM32. Though it is still new, and still has a ways to go, it's a step in the right direction.
-
-This is a quick writeup that walks through the process of setting up VSCode for STM32 development. I wanted to make VSCode my all-in-one code editor (for both embedded and non-embedded stuff) and this is how I did it. 
+This is a quick writeup that walks through the process of setting up VSCode for STM32 development. 
 
 # The Software
 Before we begin, it's important to get to know our tools. 
@@ -21,7 +19,7 @@ In VSCode, you'll need to install the C/C++ extension and Makefile tools extensi
 - `arm-none-eabi-binutils`
 - `arm-none-eabi-newlib`
 
-We'll also install `stlink` which is a firmware programmer for STM32 microcontrollers using the ST-LINK probe and also install the Windows USB drivers for the ST-LINK probe from STMicroelectronics' website. 
+We'll also install the `stlink` package which is a firmware programmer for STM32 microcontrollers using the ST-LINK probe and also install the Windows USB drivers for the ST-LINK probe from STMicroelectronics' website. 
 
 MSYS2 comes with multiple [<u>environments</u>](https://www.msys2.org/docs/environments/). I use the `UCRT64` environment but any of them should work. Add the path to the MSYS2 environment to the PATH system variable. The MSYS2 environment path should look something like this: `C:\msys64\ucrt64\bin`
 

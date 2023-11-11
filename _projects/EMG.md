@@ -1,12 +1,12 @@
 ---
 title: Wearable EMG Sensor 
-description: A wireless, wearable EMG sensor in the form of an armband
+description: A wireless, wearable EMG sensor for gesture recognition
 layout: post
 ---
 
-**CURRENTLY ON HOLD INDEFINITELY**
+**SHELVED INDEFINITELY**
 
-2023 UPDATE: As of April 2023 this project has been temporarily shelved. I do have plans to come back to it eventually (I already have some ideas for revamping the whole design) but due to lack of time (and money) I've decided to shelve this project for future me to come back to. 
+2023 UPDATE: As of April 2023 this project has been shelved. I'd like to come back to this in the future (or perhaps make something else that can also perform gesture recognition).
 
 # Background
 When I first learned about signal processing in uni, I was kinda hooked on it. I didn't really like the mathy and theoretical part of it that much (even though it was basically like 90% of the course) but I enjoyed doing the labs and assignment which were more application-based. 
