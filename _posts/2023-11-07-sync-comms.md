@@ -1,6 +1,6 @@
 ---
 layout: post
-title: I2C and SPI: The Synchronous Duo
+title: I2C and SPI - The Synchronous Duo
 categories: misc
 ---
 
