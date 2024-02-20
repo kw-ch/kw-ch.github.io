@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Mutexes and semaphores
+title: Embedded Systems Part ??: Mutexes and semaphores
 categories: misc
 ---
 
-(Note: This post assumes you have basic knowledge of RTOS, specifically mutexes and semaphores)
+(Note: This isn't really a full post that's meant to be a part of the Embedded Systems series but I just thought it would be fitting to put it here)
 
-So recently I've been learning about RTOS (real-time operating systems) and how they work. One question that has always stuck in the back of my head (that I've never really bothered to address until now) is what exactly is the difference between a mutex and a binary semaphore? Also, what's the point of counting semaphores if semaphores are meant to restrict access to shared resources (don't you only want one task accessing a resource at once?). So after spending hours across multiple days here is my attempt to answer these two questions.
+One question that has always stuck in the back of my head is what exactly is the difference between a mutex and a binary semaphore? Also, what's the point of counting semaphores if semaphores are meant to restrict access to shared resources (don't you only want one task accessing a resource at once?). So after spending hours across multiple days here is my attempt to answer these two questions.
 
 # Mutexes and Semaphores
 So let's first address the difference between a mutex and a binary semaphore. 

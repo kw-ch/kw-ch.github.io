@@ -4,7 +4,7 @@ title: Embedded Systems Part 2 - The Synchronous Duo I2C and SPI
 categories: misc
 ---
 
-After UART, I2C and SPI are perhaps the two most familiar communication protocols to those who have worked with embedded systems before. 
+I2C and SPI are UART's synchronous (and better) cousins and are the two most common protocols after UART.  
 
 # Synchronous Communications
 Unlike UART, SPI and I2C are both *synchronous* protocols, meaning that a clock signal is used to keep both the transmitter and receiver in sync during the data transfer. At every clock edge (either rising or falling), the transmitter knows to transmit data and the receiver knows to sample the data lines. 
