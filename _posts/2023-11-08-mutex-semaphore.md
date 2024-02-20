@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Embedded Systems Part ??: Mutexes and semaphores
+title: Embedded Systems Part ?? - Mutexes and semaphores
 categories: misc
 ---
 
