@@ -37,7 +37,10 @@ To program/debug the STM32 using the ST-LINK, you'll need to connect the ST-LINK
 
 To test whether your ST-LINK is detecting the STM32 correctly, type `st-info --probe` in your MSYS2 shell. You should see something like: 
 
-![image](/assets/stinfo.png)
+<p align="center">
+  <img src="/assets/stinfo.png">
+</p>
+
 
 # Getting Blinky
 With everything in place, we can get started the code. We'll be doing the ubiquitous blinky program to demonstrate the build process. 
@@ -66,6 +69,8 @@ With the coding done, we can now build the project and flash it to the Black Pil
 
 You'll find a new folder inside your project folder called 'build'. Enter this folder and run `st-flash --reset write <project-name.bin> 0x8000000` to flash the program to the STM32. `--reset` is optional but helps ensure the MCU is in reset mode while flashing. If successful, you should see something like:
 
-![image](/assets/makeoutput.png)
+<p align="center">
+  <img src="/assets/makeoutput.png">
+</p>
 
 Don't worry about the warning message `NRST is not connected`. This happens if you're using a development board that doesn't have an NRST pin on the board for the ST-LINK probe (quite common with third party boards). If the board was successfully flashed, the LED on the board should start blinking. 
