@@ -2,7 +2,7 @@
 layout: page
 title: About
 ---
-Hi! I'm kwch, electrical engineering student and electronics hobbyist. Here, I write about my projects (both personal and academic) and blog about stuff (mostly technical things). 
+Hello there, I'm kw-ch, electrical engineering student and electronics hobbyist. Here, I (infrequently) write about my projects and blog about mostly technical stuff. 
 
 <!---
 You can find my project logs [<u>here</u>](https://msuicc.github.io/projects)
