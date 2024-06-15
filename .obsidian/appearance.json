@@ -1,0 +1,15 @@
+{
+  "cssTheme": "Obsidian Nord",
+  "translucency": false,
+  "baseFontSize": 14,
+  "enabledCssSnippets": [
+    "Font",
+    "image-opacity",
+    "heading-size"
+  ],
+  "interfaceFontFamily": "Inter,Manrope,Noto Sans",
+  "accentColor": "#00ffee",
+  "textFontFamily": "Inter,Manrope,iA Writer Quattro V Regular,Atkinson Hyperlegible",
+  "monospaceFontFamily": "JetBrains Mono",
+  "theme": "obsidian"
+}

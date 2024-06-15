@@ -1,0 +1,191 @@
+{
+  "main": {
+    "id": "2f1fc40396fb19f8",
+    "type": "split",
+    "children": [
+      {
+        "id": "a5b5c5bdc3679718",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0d29d964f82d74cc",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2022-12-28-stm32-development.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "18a675985d9bbfc2",
+    "type": "split",
+    "children": [
+      {
+        "id": "3b4964ef21fc40b9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b2639af8400156cf",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "15509ba1f5c2ca46",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7ae001986baf1e05",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 221.5
+  },
+  "right": {
+    "id": "67e562b3f135c8d1",
+    "type": "split",
+    "children": [
+      {
+        "id": "5f3628b680f83001",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d46cdbf024ad1dbc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_posts/2022-12-28-stm32-development.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2f332c336d6f435d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_posts/2022-12-28-stm32-development.md"
+              }
+            }
+          },
+          {
+            "id": "5d10b489ea305112",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 285.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "oz-clear-unused-images:Clear Unused Images": false
+    }
+  },
+  "active": "0d29d964f82d74cc",
+  "lastOpenFiles": [
+    "Personal/Misc Notes.md",
+    "Personal/Career Stuff.md",
+    "Personal/Text Dump.md",
+    "Kanban.md",
+    "Hobby Stuff.md",
+    "Uni/Pain and Suffering.md",
+    "Uni/Misc.md",
+    "Personal/Misc.md",
+    "ECE3073/W6 - Performance Enhancement.md",
+    "ECE3073/W5 - Common Computer Peripherals.md",
+    "ECE3073/W4 - Buses and Memory Systems.md",
+    "ECE3073/W8 to 11 - RTOS.md",
+    "ECE3073/W7 - ADC and DAC.md",
+    "ECE3073/W3 - Responding to Events.md",
+    "ECE3073/W2 - NIOS II and Assembly.md",
+    "ECE3073/W1 - Intro.md",
+    "Uni/MFAB.md",
+    "Uni/embeds/Pasted image 20240401200656.png",
+    "Uni/embeds",
+    "embeds/Pasted image 20240323055751.png",
+    "Uni",
+    "embeds",
+    "embeds/Pasted image 20240311133252.png",
+    "embeds/Pasted image 20240311130920.png",
+    "New folder/past years/PYP/2018/A Conducting Sphere Of Radius A Is Half - Embedded... _ Chegg.com.pdf",
+    "New folder/past years/PYP/2018/5. (4 Points) Two Parallel Sheets Of Glass (1 8.5c... _ Chegg.com.pdf",
+    "New folder/past years/PYP/ECE3121 S2 2021 Final Exam.pdf",
+    "New folder/past years/PYP/ECE3121 S2 2021 Class Test.pdf",
+    "New folder/past years/PYP/ECE3121 S2 2021 Class Test Solutions.pdf",
+    "New folder/past years/PYP/Adobe Scan 02 Nov 2021.pdf",
+    "New folder/past years/PYP/30882591_supp_paper.pdf",
+    "New folder/ECE3121/W9 - Transformers, Mutual Inductance, Displacement Current.md",
+    "New folder/ECE3121/W8 - Inductance, Magnetic Energy, Hall Effect, Faraday's Law.md",
+    "New folder/ECE3121/W7 - Magnetic Flux Density and Magnetic Forces.md",
+    "New folder/ECE3121/W6 - Biot Savart's Law and Ampere's Law.md",
+    "New folder/ECE3121/W5 - Capacitors.md",
+    "New folder/ECE3121/W4 - Dielectrics, Polarization, Laplance and Poisson Equation.md",
+    "New folder/ECE3121/W3 - Electric Flux Density, Gauss's Law and Electric Potential.md",
+    "New folder/ECE3121/W2 - Line, Surface, and Volume Charge.md",
+    "New folder/ECE3121/W1 - Coulomb's Law & E-Field Intensity.md",
+    "New folder/ECE3121/Embeds/Screenshot 2023-07-31 004602.png",
+    "New folder/ECE3121/Embeds/Screenshot 2023-07-31 004553.png",
+    "New folder/ECE3121/Embeds/Screenshot 2023-07-31 004544.png",
+    "New folder/ECE3121/Embeds/Screenshot 2023-07-31 004537.png",
+    "New folder/ECE3121/Embeds/Screenshot 2023-07-31 004530.png",
+    "New folder/ECE3121/Embeds/Screenshot 2023-07-31 004523.png"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "promptDelete": false,
+  "foldHeading": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "showLineNumber": false,
+  "livePreview": true,
+  "spellcheckLanguages": null,
+  "spellcheck": false,
+  "trashOption": "local",
+  "foldIndent": false,
+  "attachmentFolderPath": "./embeds",
+  "alwaysUpdateLinks": true
+}
