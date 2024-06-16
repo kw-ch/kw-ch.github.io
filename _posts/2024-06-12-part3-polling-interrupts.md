@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Embedded Systems Part 3 - Polling and Interrupts
-tags:
-  - embedded-systems
+categories: Embedded Systems
 ---
 
 Processors pretty much always need to be able to receive input from external devices, sensors, buttons, switches etc. In a PC, this could be devices like a keyboard, a mouse, a monitor, etc. In an MCU, it could peripherals such as ADCs/DACs, communication interfaces and various ICs. 

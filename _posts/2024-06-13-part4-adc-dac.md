@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Embedded Systems Part 4 - Interacting with the Analog World
-tags:
-  - embedded-systems
+categories: Embedded Systems
 ---
 
 Embedded systems are digital. However, the world around us is not made of 1's and 0's. The world we live in is analog. The things we perceive are analog. So no matter how advanced processors can get, they will always need an interface to bridge the gap between the analog world and the digital domain. These interfaces are known as Digital-to-Analog Converters (DACs) and Analog-to-Digital Converters (ADCs). 

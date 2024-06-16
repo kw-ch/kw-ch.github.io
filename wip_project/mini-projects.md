@@ -21,7 +21,7 @@ The buttons are used to toggle between displaying the time and the temperature a
 
 So do I use this? Actually yes. It sits right in the middle underneath my monitor and helps me keep track of time. Yes I know I can just glance down at my taskbar to accomplish the same thing but there's something about a big red display right in front of you that just forces you to always be aware of the time. I don't really use the stopwatch and timer function all that much, but it's handy to have.
 
-The temperature and humidity are kinda just an extra gimmick, but it's kinda nice to know exactly how hot/humid it is especially as I live in a tropical climate where it's perpetually summer. 
+The temperature and humidity are kinda just an extra gimmick, but sometimes it's nice to know exactly how hot and humid it is especially when you live in a tropical climate. 
 
 Pic here
 
@@ -48,7 +48,7 @@ So I've decided to design a PCB that allows the 555 timer to be configured in ei
 
 Pic here
 
-This was made possible with a lot of jumpers and female headers that lets you use swap out the resistor and capacitor values to achieve whatever desired frequency/duty cycle/delay. It's definitely janky, but it was fun to make and play around with. 
+This was made possible with a lot of jumpers to switch up the connections and female machined pin headers to allow resistor and capacitor values to be swapped out as desired.
 
-So do I use this? Well, not really. The astable mode is nice to quickly get a PWM signal running without having to go through the hassle of setting things up on an MCU. Aside from that I don't really use it. But given that monostable, bistable and astable multivibrators can be building blocks for a lot of things, perhaps I might use them for another project later on.
+So do I use this? Well, the astable mode is helpful for getting a PWM signal up and running without needing to set things up on an MCU. But aside from that, I don't use it much. However, multivibrators are building blocks for many types of circuits, so perhaps I may find a use for them later on.
 
