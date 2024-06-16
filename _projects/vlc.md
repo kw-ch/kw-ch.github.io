@@ -2,8 +2,7 @@
 title: VLC Transmitter
 description: A project involving the design of a transmitter for a visible light communication system on an FPGA
 layout: post
-tags:
-  - project
+categories: Projects
 ---
 
 *This project was undertaken as part of an undergraduate research program at my university.
