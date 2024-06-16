@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Getting Blinky on STM32 using STM32CubeMX, VSCode and MSYS2 on Windows
-description: A quick writeup that walks through the process of setting up VSCode for STM32 development.
 tags:
   - stm32
 ---

@@ -24,7 +24,6 @@ layout: default
             {%- if forloop.last == false %}, {% endif -%}
         {% endfor %}
       {%- endif -%}</p>
-  </header>
 
   <span>[
     {% for tag in page.tags %}
@@ -32,6 +31,8 @@ layout: default
       <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
     {% endfor %}
   ]</span>
+
+  </header>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
