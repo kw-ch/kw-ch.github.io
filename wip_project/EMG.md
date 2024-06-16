@@ -2,6 +2,8 @@
 title: Wearable EMG Sensor 
 description: A wireless, wearable EMG sensor for gesture recognition
 layout: post
+tags:
+  - project
 ---
 
 **SHELVED INDEFINITELY**

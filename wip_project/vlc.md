@@ -2,11 +2,11 @@
 title: VLC Transmitter
 description: Undergraduate research project involving the design of a transmitter for a visible light communication system on an FPGA
 layout: post
+tags:
+  - project
 ---
 
 *This project was undertaken as part of an undergraduate research program.
-
-**WORK IN PROGRESS**
 
 # Overview
 ![image](/assets/vlc_block.drawio.png)

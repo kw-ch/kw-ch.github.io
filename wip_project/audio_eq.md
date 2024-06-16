@@ -2,6 +2,8 @@
 title: USB Audio Equalizer
 description: A USB Audio Equalizer based on an STM32
 layout: post
+tags:
+  - project
 ---
 
 Like many others, I like listening to music. I don't consider myself an audiophile (I could never bring myself to drop hundreds let alone thousands on audio equipment) but I can appreciate some good quality audio playback. 

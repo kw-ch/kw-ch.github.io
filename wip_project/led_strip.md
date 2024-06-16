@@ -2,13 +2,12 @@
 title: CCT LED Strip Controller
 description: An STM32-based controller for a tuneable CCT LED strip.
 layout: post
+tags:
+  - project
 ---
+For a while now I've been looking into a bias lighting setup using LED strips for my monitors when working at night. While there are many off-the-shelf solutions that you can buy for this purpose, I didn't really like any of them, either because they were crazy expensive, not adjustable, or had to be hooked up to some mobile app (not everything needs to be an IoT device ok?). 
 
-[<u>Project Github</u>](LINK) 
-
-For a while now I've been looking into a bias lighting setup for my monitors when working at night. While there are many off-the-shelf LED strips that you can buy for this purpose, I didn't really like any of the choice, either because they were crazy expensive, not adjustable, or had to be hooked up to some stupid mobile app (not everything needs to be an IoT device ok?). 
-
-Hence I have set out on making my bias lighting solution. I chose these LED strips:
+Hence I set out on making my bias lighting solution. I chose these LED strips:
 
 <p align="center">
   <img src="/assets/led_strip.png">

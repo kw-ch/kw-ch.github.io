@@ -1,7 +1,8 @@
 ---
 layout: post
 title: RTOS Part ?? - Mutexes and semaphores
-categories: misc
+tags:
+  - rtos
 ---
 
 One question that has always stuck in the back of my head is what exactly is the difference between a mutex and a binary semaphore? Also, what's the point of counting semaphores if semaphores are meant to restrict access to shared resources (don't you only want one task accessing a resource at once?). So after some reading here is my answer to these two questions.
