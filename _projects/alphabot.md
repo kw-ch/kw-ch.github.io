@@ -1,6 +1,6 @@
 ---
 title: Autonomous Mobile Robot
-description: An academic project involving the development of a mobile robot that can autonomously navigate and search for objects within an arena. 
+description: A mobile robot that can autonomously navigate and search for objects within an arena. 
 layout: post
 tags:
   - project
@@ -8,7 +8,7 @@ tags:
 
 This is a university project for a robotics course. It uses an Alphabot2 kit from Waveshare with a Raspberry Pi 4 Model B as the controller. 
 
-The main objective is to develop an autonomous mobile robot that can navigate localize itself within an arena and navigate to 3 target objects (the targets are fruits) and avoid obstacles such as ArUco markers and non-target fruits (there were 5 fruits total, so 3 of them can be targets and the remaining 2 are obstacles). 
+The main objective is to develop an autonomous mobile robot that can localize itself within an arena and navigate to 3 target objects (the targets are fruits) and avoid obstacles such as ArUco markers and non-target fruits (there were 5 fruits total, so any 3 of them can be targets and the remaining 2 are obstacles). 
 
 Here is an example of how the arena looks like:
 <p align="center">
