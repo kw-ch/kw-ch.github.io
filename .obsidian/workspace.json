@@ -4,24 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "a5b5c5bdc3679718",
+        "id": "c33af36c4b4c7c56",
         "type": "tabs",
         "children": [
           {
-            "id": "0d29d964f82d74cc",
+            "id": "6be582e62380157a",
             "type": "leaf",
-            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "projects.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5f36988f2ac3d0c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "archive.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "317f816f6a0bf08c",
+            "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "_posts/2022-12-28-stm32-development.md",
                 "mode": "source",
                 "source": false
-              },
-              "pinned": true
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -71,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 221.5
+    "width": 249.5
   },
   "right": {
     "id": "67e562b3f135c8d1",
@@ -139,8 +162,24 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "0d29d964f82d74cc",
+  "active": "317f816f6a0bf08c",
   "lastOpenFiles": [
+    "tag/stm32.md",
+    "tag/embedded.md",
+    "_posts/2022-12-28-stm32-development.md",
+    "tag/New Text Document.txt",
+    "tag",
+    "New folder",
+    "_layouts/tagpage.html",
+    "_layouts/post - Copy.html",
+    "_includes/collecttags.html",
+    "_includes/custom-head - Copy.html",
+    "_includes/Untitled.md",
+    "_posts/2023-11-08-mutex-semaphore.md",
+    "_posts/2022-12-29-emg-cookbook.md",
+    "archive.md",
+    "projects.md",
+    "index.md",
     "Personal/Misc Notes.md",
     "Personal/Career Stuff.md",
     "Personal/Text Dump.md",
@@ -165,22 +204,6 @@
     "embeds",
     "embeds/Pasted image 20240311133252.png",
     "embeds/Pasted image 20240311130920.png",
-    "New folder/past years/PYP/2018/A Conducting Sphere Of Radius A Is Half - Embedded... _ Chegg.com.pdf",
-    "New folder/past years/PYP/2018/5. (4 Points) Two Parallel Sheets Of Glass (1 8.5c... _ Chegg.com.pdf",
-    "New folder/past years/PYP/ECE3121 S2 2021 Final Exam.pdf",
-    "New folder/past years/PYP/ECE3121 S2 2021 Class Test.pdf",
-    "New folder/past years/PYP/ECE3121 S2 2021 Class Test Solutions.pdf",
-    "New folder/past years/PYP/Adobe Scan 02 Nov 2021.pdf",
-    "New folder/past years/PYP/30882591_supp_paper.pdf",
-    "New folder/ECE3121/W9 - Transformers, Mutual Inductance, Displacement Current.md",
-    "New folder/ECE3121/W8 - Inductance, Magnetic Energy, Hall Effect, Faraday's Law.md",
-    "New folder/ECE3121/W7 - Magnetic Flux Density and Magnetic Forces.md",
-    "New folder/ECE3121/W6 - Biot Savart's Law and Ampere's Law.md",
-    "New folder/ECE3121/W5 - Capacitors.md",
-    "New folder/ECE3121/W4 - Dielectrics, Polarization, Laplance and Poisson Equation.md",
-    "New folder/ECE3121/W3 - Electric Flux Density, Gauss's Law and Electric Potential.md",
-    "New folder/ECE3121/W2 - Line, Surface, and Volume Charge.md",
-    "New folder/ECE3121/W1 - Coulomb's Law & E-Field Intensity.md",
     "New folder/ECE3121/Embeds/Screenshot 2023-07-31 004602.png",
     "New folder/ECE3121/Embeds/Screenshot 2023-07-31 004553.png",
     "New folder/ECE3121/Embeds/Screenshot 2023-07-31 004544.png",
