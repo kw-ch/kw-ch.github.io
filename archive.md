@@ -3,7 +3,9 @@ permalink: /archive
 layout: page
 title: Archive
 ---
-
+<div class="center">
+<a href="/tag/" title="View Posts by Tag">View Posts organized by Tags</a>
+</div>
 
 <ul>
   {% for post in site.posts %}
