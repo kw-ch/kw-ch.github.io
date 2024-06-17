@@ -3,8 +3,14 @@ permalink: /archive
 layout: page
 title: Archive
 ---
+<style>
+  .center {
+    margin-bottom: 20px; /* Adjust the value as needed */
+  }
+</style>
+
 <div class="center">
-<a href="/tag/" title="View Posts by Tag">View Posts organized by Tags</a>
+<a href="/tag/" title="View Posts by Tag"><ins>View Posts organized by Tags</ins></a>
 </div>
 
 <ul>
