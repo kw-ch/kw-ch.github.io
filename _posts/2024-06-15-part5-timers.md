@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Embedded Systems Part 5 - Timers"
-tags:
-  - embedded-systems
+categories: Embedded Systems
 ---
 
 Timers are a core part of embedded systems. They are extremely versatile and can be used for many things such as measuring execution time, create non-blocking code and precisely control GPIO timings 

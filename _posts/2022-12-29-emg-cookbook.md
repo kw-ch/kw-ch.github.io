@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "EMG Cookbook"
-tags:
-  - misc
+tags: Miscellaneous
 ---
 
 An information dump for all things EMG. 
