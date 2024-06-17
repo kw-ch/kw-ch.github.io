@@ -35,6 +35,7 @@ First is the binary-weighted DAC.
 The binary-weighted DAC makes clever use of a summing amplifier to perform the digital to analog conversion. Recall that the output voltage of a summing amplifier is given by: 
 
 $$ V_{out} = -(\frac{R_F}{R_1} \times V_{1} + \frac{R_F}{R_2} \times V_{2} + .... \frac{R_F}{R_n} \times V_{n}) $$
+
 where n is the number of inputs to the summing amplifier and V<sub>n</sub> is the input voltage at each bit (n = 1 is the MSB).
 
 Each digit in the binary number is given a different weightage for their contributions to the output analog voltage. The weightages increase in powers of 2, hence the name binary-weighted. 
@@ -42,7 +43,9 @@ Each digit in the binary number is given a different weightage for their contrib
 By plugging in the resistances into the summing amplifier formula, we can see that the most significant bit (MSB) being the highest valued digit, has the highest weightage and the least significant bit (LSB) has the lowest weightage. 
 
 With reference to the above diagram, assume we have a 4-bit binary-weighted DAC, the binary input is 1010 and R = 1kΩ. Let's also assume that the logic level voltage is 3.3V. So a '1' will represent an input voltage of 3.3V and a '0' will represent an input voltage of 0V. The output is therefore:
+
 $$ V_{out} = -(\frac{1k\Omega}{2k\Omega} \times 3.3V + \frac{1k\Omega}{4k\Omega} \times 0V + \frac{1k\Omega}{8k\Omega} \times 3.3V + \frac{1k\Omega}{16k\Omega} \times 0V)$$
+
 $$V_{out} = - (1.65V + 0V + 0.4125V + 0V) = -2.0625V $$
 
 The binary-weighted DAC is a simple and straightforward design. However, it is actually not so practical as it would require using a large range of resistors with very low tolerances (one for each bit) to obtain an accurate result. This would get expensive real quick for a higher resolution DAC (imagine needing to get 16 different precision resistor values for a 16 bit DAC). 
@@ -55,22 +58,25 @@ The binary-weighted DAC is a simple and straightforward design. However, it is a
 The R-2R Ladder DAC as its name implies, uses a ladder-like network of resistors to convert digital voltages to analog. As we can see, the R-2R Ladder DAC only needs two resistor values (R and 2R) which makes it much easier to achieve a good level of accuracy. 
 
 The output voltage is given by:
+
 $$V_{out} = \frac{2^{0} \times V_{1} + 2^{1} \times V_{2} + ... \ 2^{n-1} \times V_{n}} {2^n}$$
+
 where n is the number of inputs to the summing amplifier and V<sub>n</sub> is the input voltage at each bit (n = 1 is the LSB).
 
 Due to my laziness, I won't show how to derive the equation for the output voltage, but if you'd like, you can try to derive it by combining the series and parallel resistors to find the proportional voltage values being contributed to the final analog voltage by each bit. 
 
 Using the same assumptions for the binary-weighted DAC, we can calculate the output voltage as such:
+
 $$V_{out} = \frac{1 \times 0V + 2 \times 3.3V + 4 \times 0V + 8 \times 3.3V }{2^4}$$
+
 $$V_{out} = \frac{6.6V + 26.4V}{16} = 2.0625V$$
+
 We get the same value as the binary-weighted DAC (only not inverted). 
 
 # ADCs
 The inverse of a DAC is an ADC. ADCs basically takes snapshots of an analog voltage at a point in time and uses these snapshots to produce a binary number that represents this analog voltage. 
 
 The basic ideas of DACs generally apply to ADCs as well. Their resolution is defined by the number of bits and the ADC can only accept inputs with a voltage range between V<sub>ref</sub> and 0V. 
-
-
 
 ## Types of ADCs
 Just as with DACs, we won't be talking exhaustively about all the various types of ADCs out there. Here, we'll only be talking about one type of ADC - The Successive Approximation Register (SAR) ADC. 
