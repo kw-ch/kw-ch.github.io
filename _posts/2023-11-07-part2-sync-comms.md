@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Embedded Systems Part 2 - The Synchronous Duo I2C and SPI 
-categories: Embedded Systems
+tags:
+  - embedded-systems
 ---
 
 I2C and SPI are UART's synchronous (and better) cousins and are the two most common protocols after UART.  

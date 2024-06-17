@@ -2,7 +2,8 @@
 title: Autonomous Mobile Robot
 description: A mobile robot that can autonomously navigate and search for objects within an arena. 
 layout: post
-categories: Projects
+tags:
+  - project
 ---
 
 This is a university project for a robotics course. It uses an [Alphabot2  robot kit from Waveshare](https://www.waveshare.com/wiki/AlphaBot2-Pi) with a Raspberry Pi 4 Model B as the controller. 
