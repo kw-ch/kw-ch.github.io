@@ -2,7 +2,7 @@
 layout: page
 title: About
 ---
-Hello there, I'm kw-ch, electrical engineering student and electronics hobbyist. Here, I blog mainly about topics in electronics and embedded systems.  I also (very infrequently) write about projects that I'm working on.
+Hello there, I'm kw-ch, electrical engineering student and electronics hobbyist. Here, I blog mainly about topics in electronics and embedded systems.  I also (very infrequently) write about projects I've done, both personal projects and academic projects in university.
 
 <!---
 You can find my project logs [<u>here</u>](https://msuicc.github.io/projects)
