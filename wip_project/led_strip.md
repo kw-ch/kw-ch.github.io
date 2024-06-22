@@ -5,9 +5,20 @@ layout: post
 tags:
   - project
 ---
-For a while now I've been looking into a bias lighting setup using LED strips for my monitors when working at night. While there are many off-the-shelf solutions that you can buy for this purpose, I didn't really like any of them, either because they were crazy expensive, not adjustable, or had to be hooked up to some mobile app (not everything needs to be an IoT device ok?). 
+For a while now I've been looking into a bias lighting setup for my monitors when working at night. If you don't know what bias lighting is, it's basically just lighting up the wall/surface behind and around your display device like a TV or monitor, usually with LED strips. Here's an example:
 
-Hence I set out on making my bias lighting solution. I chose these LED strips:
+<p align="center">
+  <img src="/assets/led_bias.webp">
+</p>
+
+In a dark room with no lighting, your eyes have to constantly adjust to between the brightness of your screen and the darkness of everything else around it. Bias lighting reduces this difference in brightness, which helps reduce eyestrain. 
+
+While there are many off-the-shelf solutions that you just can buy, I didn't really like any of them, either because they were either not adjustable, crazy expensive or had to be hooked up to some mobile app (not everything needs to be IoT ok?)
+
+Hence I set out on making my own bias lighting solution. 
+
+# Implementation
+I chose these LED strips:
 
 <p align="center">
   <img src="/assets/led_strip.png">
@@ -23,21 +34,22 @@ These LED strips are fairly straightforward to control. It has 3 terminals, VCC,
 
 As I had a 24V power supply lying around, I decided to go for the 24V variant as it'd consume less current which means less heat dissipated. 
 
-For the MCU, I went with the STM32 as per usual. Specifically the STM32G0 series, as these chips are small and efficient which is great as I always disliked having unused pins on a PCB as it felt a bit wasteful. 
+For the MCU, I went with the STM32 as per usual. Specifically the STM32G0 series, as these chips are small and efficient which is great as I always felt that having so many extra unused pins was a bit wasteful
 
 Since these LED strips are common-anode, they can be easily controlled using some MOSFET low-side switches (2 channels, 1 for warm white, 1 for cool white). 
 
-To chose a suitable MOSFET, there are a few key characteristics to look out for. First is a low Drain-to-Source On-Resistance or R<sub>DS(on)</sub>. A low R<sub>DS(on)</sub> minimizes power loss and reduces heat. Another thing is Gate Threshold Voltage or V<sub>GS(th)</sub> which should be low enough to allow the MOSFET to be turned on by the MCU's logic level voltage. 
+To chose a suitable MOSFET, there are a few key characteristics to look out for. First is a low Drain-to-Source On-Resistance (R<sub>DS(on)</sub>). A low R<sub>DS(on)</sub> minimizes power loss and reduces heat. Another thing is Gate Threshold Voltage (V<sub>GS(th)</sub>) which should be low enough to allow the MOSFET to be turned on by the MCU's logic level voltage. 
 
-I chose the IRLB8721PBF N-channel power MOSFET by Infineon. Of course, there are loads of other MOSFETs out there that are also suitable for this purpose, I just chose this as it's familiar to me. 
+For my implementation, I used the IRLB8721PBF N-channel power MOSFET by Infineon, as I had some with me already, but realistically there's hundreds if not thousands of other MOSFETs that should fit the bill.  
 
 The MOSFETs are connected as such: 
 <p align="center">
   <img src="/assets/led_mosfet.png">
 </p>
 
-The 1k gate resistor limits the current to about 3mA and there is also a 10k pull down resistor for the gate. 
+The 330 ohms gate resistor limits the current to about 10mA and there is also a 10k pull down resistor for the gate. 
 
-To adjust the light output of the LED strips, I used a rotary encoder. The rotary encoder can act as a button when pushed so I used that to cycle between 3 different color temperatures which are warm white (3000K), natural white (4000K) and cool white (6500K). The rotation of the encoder itself controls the brightness.
+To adjust the light output of the LED strips, I used a rotary encoder. The encodeer's push button output cycles through 3 different preset colour temperatures which are warm white (3000K), natural white (4000K) and cool white (6500K). The rotation of the encoder controls the brightness.
 
-The final PCB looks like this:
+# Testing
+WIP 

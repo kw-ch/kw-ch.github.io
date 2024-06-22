@@ -5,7 +5,7 @@ tags:
   - embedded-systems
 ---
 
-Timers are a core part of embedded systems. They are extremely versatile and can be used for many things such as measuring execution time, create non-blocking code and precisely control GPIO timings 
+Timers are a core part of embedded systems. They are extremely versatile and can be used for many things such as measuring execution time, create non-blocking code and precisely control GPIO timings.
 
 In their most basic form, a timer is basically a digital logic circuit that can count up or down every clock cycle. For simplicity's sake, we'll mainly discuss up counters here. The resolution of a timer is determined by the number of bits. So an 8 bit timer can count up to 255 before it resets back to 0 (this is known as a roll over). 
 
