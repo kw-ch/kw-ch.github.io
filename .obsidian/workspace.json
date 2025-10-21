@@ -35,8 +35,7 @@
               "title": "vlc"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -185,10 +184,11 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "fffa8cf96c23e4dc",
+  "active": "612867c5ac89a554",
   "lastOpenFiles": [
-    "unused/alphabot.md",
     "unused/vlc.md",
+    "index.md",
+    "unused/alphabot.md",
     "_posts/2023-11-04-part1-uart.md"
   ]
 }

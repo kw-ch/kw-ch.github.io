@@ -2,9 +2,9 @@
 layout: page
 title: About
 ---
-Hello there, I'm kw-ch, electrical engineering student and avid electronics hobbyist. My professional interests are in embedded systems, electronics design, and biomedical engineering. In my spare time, I like to build things with the STM32 and ESP32 microcontrollers to solve practical problems. 
+Hey, I'm kw-ch. By day, I'm a firmware engineer, but my real passion shows up after hours—tinkering with electronics, designing 3D prints, ham radio gear, you name it. I'm also a volunteer emergency medical responder because, well, some things are more important than hobbies.
 
-Here, I mainly blog about topics in electronics and embedded systems. I also (infrequently) write about projects I'm working on, both personal projects and academic projects in university.
+This blog doesn't have a theme beyond "things I find interesting." Expect project write-ups when I actually finish something, and random thoughts in between. Updates come when inspiration strikes, which is to say: no schedule, no pressure, just whatever's worth sharing.
 
 <!---
 You can find my project logs [<u>here</u>](https://msuicc.github.io/projects)
