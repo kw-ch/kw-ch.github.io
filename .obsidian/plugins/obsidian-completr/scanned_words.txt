@@ -1193,6 +1193,8 @@ Display
 DIO
 Dry
 DIP
+Daisy
+Diagram
 =======
 The
 This
@@ -2377,6 +2379,18 @@ cropping
 challenging
 crowded
 codewords
+cousins
+carries
+conventions
+clocking
+convenient
+chained
+contention
+conflicts
+complexity
+chunk
+consistency
+consistent
 of
 on
 outer
@@ -3304,6 +3318,8 @@ efforts
 encoders
 emulate
 elapses
+ending
+ensuring
 >>>>>>> 666027ec13ca01f04ba6adfdb166e3f0a00ebe10
 >>>>>>> 9c2df20bb007eadf8905e068b0ce5f952d8cf906
 flux
@@ -3817,6 +3833,7 @@ foolproof
 falsely
 fruits
 fruit
+frequently
 density
 dielectric
 direction
@@ -4394,6 +4411,12 @@ dealt
 duplex
 denoted
 dim
+daisy
+drain
+diverted
+diagnose
+disadvantages
+delaying
 was
 whatever
 works
@@ -4840,6 +4863,8 @@ weren
 workarounds
 wheel
 workaround
+worrying
+whichever
 introduced
 involved
 inner
@@ -5388,6 +5413,11 @@ images
 increasingly
 illustrated
 interests
+idles
+individually
+infer
+inconsistencies
+interrupting
 by
 between
 but
@@ -5866,6 +5896,8 @@ blocking
 brings
 blur
 bounds
+begins
+breaks
 Michael
 Magnitude
 MORE
@@ -6307,6 +6339,7 @@ Menu
 Minima
 Monopolar
 Mutexes
+MultipleCS
 His
 Hence
 Here
@@ -7870,6 +7903,10 @@ served
 scan
 simultaneous
 spare
+syncing
+supports
+superloop
+simpler
 given
 generalization
 gravitational
@@ -8237,6 +8274,8 @@ gel
 gigaohms
 govern
 generator
+grow
+grows
 known
 kink
 kZ
@@ -9254,6 +9293,17 @@ planned
 painless
 precision
 perceive
+problematic
+pacing
+pulled
+pulling
+paused
+proceed
+processors
+polled
+preempt
+predictable
+processed
 Charged
 Checklist
 Coulomb
@@ -9767,6 +9817,12 @@ CubeIDE
 Click
 Cookbook
 Cyclone
+Communications
+Chip
+CPOL
+CPHA
+Circuit
+Concepts
 material
 measured
 magnitude
@@ -10313,6 +10369,9 @@ managing
 modular
 modulatior
 modulator
+modes
+mouse
+mix
 Induced
 In
 If
@@ -10718,6 +10777,10 @@ Income
 Integration
 Introduction
 Interest
+Inter
+Intergrated
+ISR
+ISRs
 the
 total
 to
@@ -11279,6 +11342,7 @@ technically
 transmissions
 tolerance
 tuning
+transmits
 regardless
 re
 reference
@@ -11889,6 +11953,11 @@ randomizing
 restrictions
 relocalize
 retrofitted
+refer
+requiring
+reducing
+repeatedly
+responsive
 you
 yeet
 yT
@@ -12810,6 +12879,10 @@ alphabot
 augmented
 ahead
 avid
+activated
+adhere
+acknowledged
+approaches
 holds
 how
 have
@@ -13210,6 +13283,8 @@ handy
 heavy
 head
 heard
+handed
+handles
 not
 nearly
 net
@@ -13596,6 +13671,8 @@ needle
 notch
 nowadays
 nil
+naming
+nested
 Gauss
 Gain
 Gradient
@@ -15217,6 +15294,9 @@ Sallen
 Short
 Simultaneous
 Similar
+SingleCS
+Stopping
+Starts
 When
 We
 While
@@ -16017,6 +16097,9 @@ Part
 Practically
 Pardon
 Plannning
+POCI
+PICO
+Polarity
 You
 Yo
 YC
@@ -17038,6 +17121,7 @@ Basics
 Blinky
 Building
 Blocking
+Block
 Just
 Ju
 Jc
@@ -17810,6 +17894,7 @@ localize
 landmark
 localization
 localisation
+log
 No
 Ni
 NkY
@@ -18162,6 +18247,7 @@ Nextcloud
 NRST
 Nearly
 Navigating
+Newer
 zero
 zeros
 zV
@@ -18864,6 +18950,7 @@ uart
 updating
 undertaken
 untapped
+unnecessarily
 OPTIONS
 Order
 Overshoot
@@ -19591,6 +19678,7 @@ Regardless
 Receiver
 Raspberry
 Recognition
+Repeated
 Unity
 Ug
 UU
@@ -19927,6 +20015,7 @@ Unix
 Ubiquitous
 Universal
 USART
+Updated
 Zeros
 ZkM
 ZgP
@@ -20540,6 +20629,7 @@ xqG
 xvDO
 xMy
 xPY
+xyz
 QZ
 QS
 Qy
