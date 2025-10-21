@@ -763,6 +763,9 @@ Filler
 Flashing
 Fortunately
 Footnotes
+Firstly
+Footnote
+FIFO
 <<<<<<< HEAD
 Density
 Drawing
@@ -2364,6 +2367,16 @@ contained
 counting
 corrupted
 consumer
+capable
+characterized
+counts
+camera
+calibrated
+contrast
+cropping
+challenging
+crowded
+codewords
 of
 on
 outer
@@ -2774,6 +2787,13 @@ option
 overwhelmed
 occurence
 overfill
+oversampling
+oversample
+objective
+observes
+observed
+occasionally
+overhaul
 electric
 experiment
 equal
@@ -3277,6 +3297,13 @@ encoder
 exceed
 endfor
 eliminating
+employ
+erroneous
+epochs
+efforts
+encoders
+emulate
+elapses
 >>>>>>> 666027ec13ca01f04ba6adfdb166e3f0a00ebe10
 >>>>>>> 9c2df20bb007eadf8905e068b0ce5f952d8cf906
 flux
@@ -3786,6 +3813,10 @@ flashed
 flight
 functionally
 finishes
+foolproof
+falsely
+fruits
+fruit
 density
 dielectric
 direction
@@ -4359,6 +4390,10 @@ dropdown
 description
 dark
 dump
+dealt
+duplex
+denoted
+dim
 was
 whatever
 works
@@ -4798,6 +4833,13 @@ website
 warning
 wheelchairs
 wirelessly
+webp
+wheels
+waypoint
+weren
+workarounds
+wheel
+workaround
 introduced
 involved
 inner
@@ -5338,6 +5380,13 @@ inherently
 introduce
 incremented
 initialise
+inherent
+inaccuracies
+impractical
+incredibly
+images
+increasingly
+illustrated
 by
 between
 but
@@ -5813,6 +5862,9 @@ bony
 biasing
 breadboard
 blocking
+brings
+blur
+bounds
 Michael
 Magnitude
 MORE
@@ -6990,6 +7042,11 @@ About
 Archive
 Acquisition
 Amplification
+Autonomous
+ArUco
+Along
+Alphabot
+Altera
 sphere
 surrounded
 still
@@ -7805,6 +7862,12 @@ stopband
 stm
 stores
 synchronize
+synchronizing
+storing
+superimposing
+served
+scan
+simultaneous
 given
 generalization
 gravitational
@@ -8170,6 +8233,8 @@ graphical
 github
 gel
 gigaohms
+govern
+generator
 known
 kink
 kZ
@@ -8523,6 +8588,7 @@ kBytes
 kbps
 keeping
 knob
+knowing
 positive
 placed
 put
@@ -9179,6 +9245,13 @@ protects
 protect
 producer
 protections
+protocols
+predetermined
+pedantry
+planned
+painless
+precision
+perceive
 Charged
 Checklist
 Coulomb
@@ -9691,6 +9764,7 @@ Code
 CubeIDE
 Click
 Cookbook
+Cyclone
 material
 measured
 magnitude
@@ -10233,6 +10307,10 @@ matches
 microprocessors
 mitigated
 mutual
+managing
+modular
+modulatior
+modulator
 Induced
 In
 If
@@ -10635,6 +10713,9 @@ Initiation
 Inversion
 Idle
 Income
+Integration
+Introduction
+Interest
 the
 total
 to
@@ -11192,6 +11273,10 @@ tendons
 tempted
 tricks
 topology
+technically
+transmissions
+tolerance
+tuning
 regardless
 re
 reference
@@ -11793,6 +11878,15 @@ rail
 roll
 ripple
 responsiveness
+referred
+receivers
+repeated
+refining
+randomly
+randomizing
+restrictions
+relocalize
+retrofitted
 you
 yeet
 yT
@@ -12705,6 +12799,14 @@ aluminium
 artifacts
 aliasing
 acquire
+age
+accidentally
+actuality
+autonomously
+arena
+alphabot
+augmented
+ahead
 holds
 how
 have
@@ -13104,6 +13206,7 @@ height
 handy
 heavy
 head
+heard
 not
 nearly
 net
@@ -13488,6 +13591,8 @@ nbsp
 nervous
 needle
 notch
+nowadays
+nil
 Gauss
 Gain
 Gradient
@@ -13817,6 +13922,7 @@ Generator
 GND
 GitHub
 Gel
+GHz
 Law
 Looking
 Laplace
@@ -14193,6 +14299,8 @@ LOW
 LCM
 Linux
 LINK
+Localization
+Lite
 vector
 volume
 vacuum
@@ -14569,6 +14677,9 @@ voluntarily
 visualizer
 velcro
 variety
+viewpoints
+visit
+vppm
 Symmetry
 Select
 Static
@@ -15100,6 +15211,9 @@ Selector
 Search
 Src
 Sallen
+Short
+Simultaneous
+Similar
 When
 We
 While
@@ -15445,6 +15559,7 @@ Wait
 Waiting
 Watchdog
 Windows
+Wouldn
 Potential
 Polarization
 Poisson
@@ -15896,6 +16011,9 @@ Peaking
 Pin
 Professional
 Part
+Practically
+Pardon
+Plannning
 You
 Yo
 YC
@@ -16183,6 +16301,7 @@ YqH
 YNy
 Yau
 Ying
+YOLOv
 Vb
 Va
 VIEW
@@ -16542,6 +16661,8 @@ Variation
 Vref
 Violations
 Variable
+Visible
+Verilog
 By
 BVPs
 BIBO
@@ -17681,6 +17802,11 @@ longitudinal
 loading
 leads
 locking
+lies
+localize
+landmark
+localization
+localisation
 No
 Ni
 NkY
@@ -18031,6 +18157,8 @@ NACK
 Nonmonotonic
 Nextcloud
 NRST
+Nearly
+Navigating
 zero
 zeros
 zV
@@ -18728,6 +18856,11 @@ unschedulable
 ubiquitous
 unaffected
 upward
+unlike
+uart
+updating
+undertaken
+untapped
 OPTIONS
 Order
 Overshoot
@@ -19055,6 +19188,7 @@ OSIdleCtr
 OSCPUUsage
 OSStatInit
 OLED
+OUT
 Recall
 Relation
 Response
@@ -19451,6 +19585,9 @@ RMA
 Rotary
 RTC
 Regardless
+Receiver
+Raspberry
+Recognition
 Unity
 Ug
 UU
@@ -19784,6 +19921,9 @@ Unbounded
 Utilisation
 Uno
 Unix
+Ubiquitous
+Universal
+USART
 Zeros
 ZkM
 ZgP
@@ -21801,6 +21941,7 @@ juggling
 jSV
 jTq
 jump
+jpg
 ÖI
 Öc
 ÖV
